@@ -1,0 +1,858 @@
+Manifest-Version: 1.0
+Implementation-Title: ofbiz_trunk
+Main-Class: org.ofbiz.base.start.Start
+Class-Path: \G:\MyProject\ofbiz_trunk\build\libs\ofbiz-base-test.jar \
+ G:\MyProject\ofbiz_trunk\framework\base\lib\jpim-0.1.jar \G:\MyProjec
+ t\ofbiz_trunk\specialpurpose\pos\lib\jcl.jar \G:\MyProject\ofbiz_trun
+ k\specialpurpose\pos\lib\jpos18-controls.jar \G:\MyProject\ofbiz_trun
+ k\specialpurpose\pos\lib\looks-2.0.2.jar \G:\MyProject\ofbiz_trunk\sp
+ ecialpurpose\pos\lib\XuiCoreSwing-v3.2rc2b.jar \G:\MyProject\ofbiz_tr
+ unk\specialpurpose\pos\lib\XuiOptional-v3.2rc2b.jar \G:\MyProject\ofb
+ iz_trunk\specialpurpose\ebaystore\lib\attributes.jar \G:\MyProject\of
+ biz_trunk\specialpurpose\ebaystore\lib\ebaycalls.jar \G:\MyProject\of
+ biz_trunk\specialpurpose\ebaystore\lib\ebaysdkcore.jar \G:\MyProject\
+ ofbiz_trunk\specialpurpose\ebaystore\lib\helper.jar \G:\MyProject\ofb
+ iz_trunk\specialpurpose\ldap\lib\cas-server-core-3.3.jar \G:\MyProjec
+ t\ofbiz_trunk\specialpurpose\birt\lib\axis-1.4.jar \G:\MyProject\ofbi
+ z_trunk\specialpurpose\birt\lib\axis-ant-1.4.jar \G:\MyProject\ofbiz_
+ trunk\specialpurpose\birt\lib\commons-discovery-0.5.jar \G:\MyProject
+ \ofbiz_trunk\specialpurpose\birt\lib\flute.jar \G:\MyProject\ofbiz_tr
+ unk\specialpurpose\birt\lib\jaxrpc.jar \G:\MyProject\ofbiz_trunk\spec
+ ialpurpose\birt\lib\js.jar \G:\MyProject\ofbiz_trunk\specialpurpose\b
+ irt\lib\org.apache.xml.resolver_1.2.0.v201005080400.jar \G:\MyProject
+ \ofbiz_trunk\specialpurpose\birt\lib\org.apache.xml.serializer_2.7.1.
+ v201005080400.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\o
+ rg.eclipse.birt.runtime_4.3.1.v20130918-1142.jar \G:\MyProject\ofbiz_
+ trunk\specialpurpose\birt\lib\org.eclipse.core.contenttype_3.4.200.v2
+ 0130326-1255.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\or
+ g.eclipse.core.expressions_3.4.500.v20130515-1343.jar \G:\MyProject\o
+ fbiz_trunk\specialpurpose\birt\lib\org.eclipse.core.filesystem_1.4.0.
+ v20130514-1240.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\
+ org.eclipse.core.jobs_3.5.300.v20130429-1813.jar \G:\MyProject\ofbiz_
+ trunk\specialpurpose\birt\lib\org.eclipse.core.resources_3.8.101.v201
+ 30717-0806.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org.
+ eclipse.core.runtime_3.9.0.v20130326-1255.jar \G:\MyProject\ofbiz_tru
+ nk\specialpurpose\birt\lib\org.eclipse.datatools.connectivity.oda_3.4
+ .1.v201308160907.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\li
+ b\org.eclipse.emf.common_2.9.1.v20130827-0309.jar \G:\MyProject\ofbiz
+ _trunk\specialpurpose\birt\lib\org.eclipse.emf.ecore.change_2.9.0.v20
+ 130827-0309.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org
+ .eclipse.emf.ecore.xmi_2.9.1.v20130827-0309.jar \G:\MyProject\ofbiz_t
+ runk\specialpurpose\birt\lib\org.eclipse.emf.ecore_2.9.1.v20130827-03
+ 09.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org.eclipse.
+ emf_2.6.0.v20130902-0605.jar \G:\MyProject\ofbiz_trunk\specialpurpose
+ \birt\lib\org.eclipse.equinox.app_1.3.100.v20130327-1442.jar \G:\MyPr
+ oject\ofbiz_trunk\specialpurpose\birt\lib\org.eclipse.equinox.common_
+ 3.6.200.v20130402-1505.jar \G:\MyProject\ofbiz_trunk\specialpurpose\b
+ irt\lib\org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar \G
+ :\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org.eclipse.equinox.r
+ egistry_3.5.301.v20130717-1549.jar \G:\MyProject\ofbiz_trunk\specialp
+ urpose\birt\lib\org.eclipse.osgi.services_3.3.100.v20130513-1956.jar 
+ \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org.eclipse.osgi_3.
+ 9.1.v20130814-1242.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\
+ lib\org.eclipse.update.configurator_3.3.200.v20130326-1319.jar \G:\My
+ Project\ofbiz_trunk\specialpurpose\birt\lib\org.w3c.css.sac_1.3.0.v20
+ 0805290154.jar \G:\MyProject\ofbiz_trunk\specialpurpose\birt\lib\org.
+ w3c.dom.smil_1.0.0.v200806040011.jar \G:\MyProject\ofbiz_trunk\specia
+ lpurpose\birt\lib\org.w3c.dom.svg_1.1.0.v201011041433.jar \G:\MyProje
+ ct\ofbiz_trunk\specialpurpose\birt\lib\saaj.jar \G:\MyProject\ofbiz_t
+ runk\specialpurpose\birt\lib\Tidy.jar \G:\MyProject\ofbiz_trunk\speci
+ alpurpose\birt\lib\viewservlets.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\apache-httpclient\commons-httpclient\3.1\964cd7
+ 4171f427720480efdec40a7c7f6e58426a\commons-httpclient-3.1.jar \C:\Use
+ rs\LENOVO PC\.gradle\caches\modules-2\files-2.1\apache-xerces\resolve
+ r\2.9.1\3d0f97750b3a03e0971831566067754ba4bfd68c\resolver-2.9.1.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\apache-xerces\x
+ ercesImpl\2.9.1\7bc7e49ddfe4fb5f193ed37ecc96c12292c8ceb6\xercesImpl-2
+ .9.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\avalo
+ n-framework\avalon-framework-impl\4.2.0\4da1db18947eb6950abb7ad792530
+ 11b9aec0e48\avalon-framework-impl-4.2.0.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\bouncycastle\bouncycastle-jce-jdk13\112
+ \106e97a5ad7a57aa2cbc48074db80225d3c0972a\bouncycastle-jce-jdk13-112.
+ jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.faster
+ xml.jackson.core\jackson-annotations\2.4.0\d6a66c7a5f01cf500377bd6695
+ 07a08cfeba882a\jackson-annotations-2.4.0.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\com.google.guava\guava\19.0\6ce200f6b2
+ 3222af3d8abb6b6459e6c44f4bb0e9\guava-19.0.jar \C:\Users\LENOVO PC\.gr
+ adle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4
+ f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar \C:\Users\LENOVO PC\.g
+ radle\caches\modules-2\files-2.1\com.googlecode.owasp-java-html-sanit
+ izer\owasp-java-html-sanitizer\20160628.1\bf17ddc1f7c0b37157f59fa0d32
+ a46e47b07efb3\owasp-java-html-sanitizer-20160628.1.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j\57.1\198ea
+ 005f41219f038f4291f0b0e9f3259730e92\icu4j-57.1.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\com.lowagie\itext\2.1.7\892bfb3e
+ 97074a61123b3b2d7caa2db112750864\itext-2.1.7.jar \C:\Users\LENOVO PC\
+ .gradle\caches\modules-2\files-2.1\com.sun.mail\javax.mail\1.5.1\9724
+ dd44f1abbba99c9858aa05fc91d53f59e7a5\javax.mail-1.5.1.jar \C:\Users\L
+ ENOVO PC\.gradle\caches\modules-2\files-2.1\com.sun.syndication\com.s
+ pringsource.com.sun.syndication\0.9.0\2c8daab3471d3060d115cdcf4af2a88
+ cb04744c1\com.springsource.com.sun.syndication-0.9.0.jar \C:\Users\LE
+ NOVO PC\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\x
+ stream\1.4.9\c43f6e6bfa79b56e04a8898a923c3cf7144dd460\xstream-1.4.9.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-bea
+ nutils\commons-beanutils-core\1.8.3\75812698e5e859f2cb587c622c4cdfcd6
+ 1676426\commons-beanutils-core-1.8.3.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\commons-cli\commons-cli\1.3.1\1303efbc4b18
+ 1e5a58bf2e967dc156a3132b97c0\commons-cli-1.3.1.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10
+ \4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar \C:\
+ Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-el\commons
+ -el\1.0\1df2c042b3f2de0124750241ac6c886dbfa2cc2c\commons-el-1.0.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-fileupl
+ oad\commons-fileupload\1.3.1\c621b54583719ac0310404463d6d99db27e1052c
+ \commons-fileupload-1.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a49520
+ 29cd8e48019ad\commons-io-2.4.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842
+ bf07b657f0369c4cb522955686\commons-logging-1.2.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\commons-net\commons-net\3.3\cd0d
+ 5510908225f76c5fe5a3f1df4fa44866f81e\commons-net-3.3.jar \C:\Users\LE
+ NOVO PC\.gradle\caches\modules-2\files-2.1\commons-validator\commons-
+ validator\1.5.1\86d05a46e8f064b300657f751b5a98c62807e2a0\commons-vali
+ dator-1.5.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.
+ 1\de.odysseus.juel\juel-impl\2.2.7\97958467acef4c2b230b72354a4eefc666
+ 28dd99\juel-impl-2.2.7.jar \C:\Users\LENOVO PC\.gradle\caches\modules
+ -2\files-2.1\de.odysseus.juel\juel-spi\2.2.7\ca146332a93720784f24a5a2
+ 4bb71c6d545133bd\juel-spi-2.2.7.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\httpunit\httpunit\1.7\2030058ecce7aea03442cd5b4
+ 0782ab94e1008f5\httpunit-1.7.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\javax.el\javax.el-api\3.0.1-b04\8c0c970b8deae5054f
+ f0bf4b17979c8181a506d3\javax.el-api-3.0.1-b04.jar \C:\Users\LENOVO PC
+ \.gradle\caches\modules-2\files-2.1\javax.servlet\javax.servlet-api\3
+ .1.0\3cd63d075497751784b2fa84be59432f4905bf7c\javax.servlet-api-3.1.0
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\javax.ser
+ vlet.jsp\javax.servlet.jsp-api\2.3.0\3795334f4306b194003e16dfba4111a0
+ 467a49bd\javax.servlet.jsp-api-2.3.0.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\javolution\javolution\5.4.3\383567a5f18a32
+ 5f9b96096f6a903ee80741480\javolution-5.4.3.jar \C:\Users\LENOVO PC\.g
+ radle\caches\modules-2\files-2.1\junit\junit-dep\4.10\64417b3bafdecd3
+ 66afa514bd5beeae6c1f85ece\junit-dep-4.10.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\jython\jython\2.1\1a48518889a7efc4b34e
+ bce7103d40e3b72b0965\jython-2.1.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\net.fortuna.ical4j\ical4j\1.0-rc3-atlassian-11\
+ cc4aa02f5cc8773876aad173517d20438b1b60ea\ical4j-1.0-rc3-atlassian-11.
+ jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\net.sf.bar
+ code4j\barcode4j-fop-ext-complete\2.0\614831d9979b920163ff617fa6994e6
+ a645c091f\barcode4j-fop-ext-complete-2.0.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\net.sf.dozer\dozer\4.2.1\f14481f31dc60
+ bccb2107e1342ee09205f1a0c9\dozer-4.2.1.jar \C:\Users\LENOVO PC\.gradl
+ e\caches\modules-2\files-2.1\net.sf.ezmorph\ezmorph\0.9.1\e88c9db9ae3
+ 1156673858a47db5368553651b0f6\ezmorph-0.9.1.jar \C:\Users\LENOVO PC\.
+ gradle\caches\modules-2\files-2.1\net.sourceforge.nekohtml\nekohtml\1
+ .9.16\61e35204e5a8fdb864152f84e2e3b33ab56f50ab\nekohtml-1.9.16.jar \C
+ :\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.ant\a
+ nt-apache-bsf\1.9.0\996470c20c515b964aff7939d2e3bf0d3f91edc4\ant-apac
+ he-bsf-1.9.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.apache.ant\ant-junit\1.9.0\cc83eb94ddcef9c12d5ede5feac3f31a3d3
+ 20e82\ant-junit-1.9.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-
+ 2\files-2.1\org.apache.ant\ant-launcher\1.9.0\a76484a4e3a893dd0ee018a
+ fef34f74df8e4ef6c\ant-launcher-1.9.0.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\org.apache.axis2\axis2-adb\1.7.1\d8edf562f
+ cc63de3560652335a42966d8393422f\axis2-adb-1.7.1.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.apache.axis2\axis2-kernel\1
+ .7.1\839abf2a83ab7aa225e4d4f8dd4236803ef977a0\axis2-kernel-1.7.1.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.axi
+ s2\axis2-transport-http\1.7.1\54b345d733908b3fc830ac87ede303ec2b7d8c3
+ b\axis2-transport-http-1.7.1.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\org.apache.axis2\axis2-transport-local\1.7.1\cfda1
+ 532e74015dd978b3d046b19a2749ac300b1\axis2-transport-local-1.7.1.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.bsf\
+ com.springsource.org.apache.bsf\2.4.0\a0c2e39a76078191c3738a2f32fad25
+ 1d680d5d9\com.springsource.org.apache.bsf-2.4.0.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-coll
+ ections4\4.1\a4cf4688fe1c7e3a63aa636cc96d013af537768e\commons-collect
+ ions4-4.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\
+ org.apache.commons\commons-compress\1.11\f43ce4c878078cbcfbb061353aa6
+ 72a4c8e81443\commons-compress-1.11.jar \C:\Users\LENOVO PC\.gradle\ca
+ ches\modules-2\files-2.1\org.apache.commons\commons-csv\1.1\1eeeb118c
+ ab7ec49c9a10b478356eff108d5e87e\commons-csv-1.1.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-dbcp
+ 2\2.1\95d4eab4b67874f452a69fe84e89f2952c6c27f6\commons-dbcp2-2.1.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.com
+ mons\commons-pool2\2.3\62a559a025fd890c30364296ece14643ba9c8c5b\commo
+ ns-pool2-2.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.apache.derby\derby\10.11.1.1\df4b50061e8e4c348ce243b921f53ee63
+ ba9bbe1\derby-10.11.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\module
+ s-2\files-2.1\org.apache.geronimo.components\geronimo-transaction\3.1
+ .1\1cfdfcff3cd6a805be401946ab14213b0bad9cb4\geronimo-transaction-3.1.
+ 1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apac
+ he.geronimo.specs\geronimo-activation_1.0.2_spec\1.0\6dc4b0c7d3358ae4
+ 752cf9cc0f97f98358ea7656\geronimo-activation_1.0.2_spec-1.0.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.geronimo
+ .specs\geronimo-j2ee-connector_1.5_spec\2.0.0\1da837af8f5bf839ab48352
+ f3dbfd6c4ecedc232\geronimo-j2ee-connector_1.5_spec-2.0.0.jar \C:\User
+ s\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.sp
+ ecs\geronimo-jaxr_1.0_spec\1.0\f6a3b80feb6badbe12c21c8a51ede7fcd6e91e
+ 5f\geronimo-jaxr_1.0_spec-1.0.jar \C:\Users\LENOVO PC\.gradle\caches\
+ modules-2\files-2.1\org.apache.geronimo.specs\geronimo-jaxrpc_1.1_spe
+ c\1.1\b0b1d499b5c7f53ed65fa1aadd6cfaf743480e1b\geronimo-jaxrpc_1.1_sp
+ ec-1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org
+ .apache.geronimo.specs\geronimo-jms_1.1_spec\1.1.1\c872b46c601d8dc036
+ 33288b81269f9e42762cea\geronimo-jms_1.1_spec-1.1.1.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.specs\ge
+ ronimo-jta_1.1_spec\1.1.1\aabab3165b8ea936b9360abbf448459c0d04a5a4\ge
+ ronimo-jta_1.1_spec-1.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\org.apache.geronimo.specs\geronimo-saaj_1.3_spec\1.1\
+ be6e6fc49ca84631f7c47a04d5438e193db54d7c\geronimo-saaj_1.3_spec-1.1.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.
+ httpcomponents\httpclient-cache\4.4.1\6c9ba9c38bca8742d5745bb27bcd4b9
+ c7542ea24\httpclient-cache-4.4.1.jar \C:\Users\LENOVO PC\.gradle\cach
+ es\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.1\f5aa3
+ 18bda4c6c8d688c9d00b90681dcd82ce636\httpcore-4.4.1.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log
+ 4j-1.2-api\2.3\68cabf6c9f54a78b3393f59e6995bed5025f9acb\log4j-1.2-api
+ -2.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.a
+ pache.logging.log4j\log4j-api\2.3\8d85ef2675d1b45fe78adad021f809bdf12
+ f2eeb\log4j-api-2.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\
+ files-2.1\org.apache.logging.log4j\log4j-core\2.3\58a3e964db5307e3065
+ 0817c5daac1e8c8ede648\log4j-core-2.3.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-nosql\2.3\d
+ de88c324edf7ab0f9b120592b9d38f0046ae366\log4j-nosql-2.3.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4
+ j\log4j-slf4j-impl\2.3\57868006655a34050ad39e78c5b12aa9c74927f7\log4j
+ -slf4j-impl-2.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\org.apache.neethi\neethi\3.0.3\ee37a38bbf9f355ee88ba554a85c9220
+ b75ba500\neethi-3.0.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-
+ 2\files-2.1\org.apache.pdfbox\pdfbox\1.8.12\5491c1dc61748ee106237b9a8
+ b81ca3aa8ef81bf\pdfbox-1.8.12.jar \C:\Users\LENOVO PC\.gradle\caches\
+ modules-2\files-2.1\org.apache.poi\poi\3.14\fad7ae6d2e59c59ffdb45f198
+ 1500babfa765180\poi-3.14.jar \C:\Users\LENOVO PC\.gradle\caches\modul
+ es-2\files-2.1\org.apache.servicemix.bundles\org.apache.servicemix.bu
+ ndles.xpp3\1.1.4c_7\5200d5cddccc804c6e321dbf828d1f9efbf9daea\org.apac
+ he.servicemix.bundles.xpp3-1.1.4c_7.jar \C:\Users\LENOVO PC\.gradle\c
+ aches\modules-2\files-2.1\org.apache.shiro\shiro-core\1.2.5\89aebf96f
+ 29eb0d4171c67d5e03787e6ed6e84fb\shiro-core-1.2.5.jar \C:\Users\LENOVO
+  PC\.gradle\caches\modules-2\files-2.1\org.apache.tika\tika-core\1.12
+ \5ab95580d22fe1dee79cffbcd98bb509a32da09b\tika-core-1.12.jar \C:\User
+ s\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.tika\tika-p
+ arsers\1.12\ee3ad76cb3066ba6c11e2db6d48b5ef6842a9788\tika-parsers-1.1
+ 2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apac
+ he.tomcat\tomcat-api\8.0.33\62142702a1ee607dff38f95a7a1d9c976f510f0\t
+ omcat-api-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\fil
+ es-2.1\org.apache.tomcat\tomcat-catalina-ha\8.0.33\850454212c5971327d
+ 29d27e3ad4787bc526f399\tomcat-catalina-ha-8.0.33.jar \C:\Users\LENOVO
+  PC\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-catal
+ ina\8.0.33\585795d972f59b19ed5a1ed94446b5a8750669c2\tomcat-catalina-8
+ .0.33.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.
+ apache.tomcat\tomcat-coyote\8.0.33\4430c9a8d27d4025a5f5e4795d5755e0d3
+ 522844\tomcat-coyote-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.apache.tomcat\tomcat-jasper\8.0.33\30525359ecc8
+ 2c313a71e056adc917f952580f5e\tomcat-jasper-8.0.33.jar \C:\Users\LENOV
+ O PC\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-jni\
+ 8.0.33\99057ad36cbb2c54e02347142348b15b4fec6673\tomcat-jni-8.0.33.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.to
+ mcat\tomcat-tribes\8.0.33\5eea23acedd7e14fe5d4c10bc1653d203b434c02\to
+ mcat-tribes-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\org.apache.tomcat\tomcat-util-scan\8.0.33\fe6f5cb85c3c13a84f
+ 38474cae0b674b3e6f3c6e\tomcat-util-scan-8.0.33.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-util\8.
+ 0.33\43e398ba63953add8d93e3806bfd686fec02d8dc\tomcat-util-8.0.33.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.tom
+ cat.embed\tomcat-embed-websocket\8.0.33\be1f95e5d9ae00f9bc6138441d29c
+ fe5c7c60256\tomcat-embed-websocket-8.0.33.jar \C:\Users\LENOVO PC\.gr
+ adle\caches\modules-2\files-2.1\org.apache.tomcat.extras\tomcat-extra
+ s-juli-adapters\8.0.33\76c82071b5dec0b9a2891da07e04596780243933\tomca
+ t-extras-juli-adapters-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\
+ modules-2\files-2.1\org.apache.tomcat.extras\tomcat-extras-juli\8.0.3
+ 3\3ef654197732568e2568962d1b0ac6aef8a6bf7\tomcat-extras-juli-8.0.33.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.
+ woden\woden-core\1.0M10\ffed89bc39eb7fce6b74765b3417c6844d8003a2\wode
+ n-core-1.0M10.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-
+ 2.1\org.apache.ws.commons.axiom\axiom-api\1.2.17\aaf2a6028822dd3d55a4
+ 221188ecb73d4c9e219a\axiom-api-1.2.17.jar \C:\Users\LENOVO PC\.gradle
+ \caches\modules-2\files-2.1\org.apache.ws.commons.axiom\axiom-impl\1.
+ 2.17\6df316d52cfd9efc4ee155b4dff0125769af1580\axiom-impl-1.2.17.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.ws.c
+ ommons.util\ws-commons-util\1.0.2\3f478e6def772c19d1053f61198fa1f6a61
+ 19238\ws-commons-util-1.0.2.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.apache.ws.xmlschema\xmlschema-core\2.2.1\2eff1f
+ 3776590d4c51cc735eab2143c497329f2\xmlschema-core-2.2.1.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.xalan\com.spr
+ ingsource.org.apache.xml.serializer\2.7.1\a5894329e5464857c3e0df52597
+ d186bea0855e3\com.springsource.org.apache.xml.serializer-2.7.1.jar \C
+ :\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlgr
+ aphics\fop\2.1\c78a1013a5de5b49a3fb1c6f3289940f44554cb6\fop-2.1.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlg
+ raphics\xmlgraphics-commons\2.1\b61132defe1df4e91c1eb0ddf544958c50d35
+ 8b5\xmlgraphics-commons-2.1.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.apache.xmlrpc\xmlrpc-client\3.1.2\ca8c57a1c4abc
+ 23b75b15ad636b4d20274f021c2\xmlrpc-client-3.1.2.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlrpc\xmlrpc-common
+ \3.1.2\a8b0084839aee2f48113b3dc2517b8022a5fbc0f\xmlrpc-common-3.1.2.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.
+ xmlrpc\xmlrpc-server\3.1.2\7e5123995d009129af3dfc663d2ec91c6541bf98\x
+ mlrpc-server-3.1.2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\org.codeartisans.thirdparties.swing\batik-all\1.8pre-r108438
+ 0\2898c85b844ad4db731d8dbd7bac395bece5bead\batik-all-1.8pre-r1084380.
+ jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.codeha
+ us.groovy\groovy-all\2.4.5\1730f61e9c9e59fd1b814371265334d7be0b8d2\gr
+ oovy-all-2.4.5.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\org.dom4j\com.springsource.org.dom4j\1.6.1\a2b40587495fdcb0ad5b8
+ 6993895311180ea2fd5\com.springsource.org.dom4j-1.6.1.jar \C:\Users\LE
+ NOVO PC\.gradle\caches\modules-2\files-2.1\org.eclipse.jdt.core.compi
+ ler\ecj\4.5\6ee0a678915ddac550d9187c896be6cb76f5cd2f\ecj-4.5.jar \C:\
+ Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.freemarker\fre
+ emarker\2.3.24-incubating\2b741197704a2df0f0b11cadb7a9e54a5604b2a6\fr
+ eemarker-2.3.24-incubating.jar \C:\Users\LENOVO PC\.gradle\caches\mod
+ ules-2\files-2.1\org.hamcrest\hamcrest-all\1.3\63a21ebc981131004ad02e
+ 0434e799fd7f3a8d5a\hamcrest-all-1.3.jar \C:\Users\LENOVO PC\.gradle\c
+ aches\modules-2\files-2.1\org.lucee\commons-lang\2.6.0\df35f722d1b578
+ d39fd9b101652cea5344e1ee2a\commons-lang-2.6.0.jar \C:\Users\LENOVO PC
+ \.gradle\caches\modules-2\files-2.1\org.owasp.esapi\esapi\2.1.0\1892f
+ 47602b211ec72abc45df93a69c953a7ffba\esapi-2.1.0.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core
+ \4.2.3.RELEASE\3ed00dad7a16b2a28df9348294f6a67151f43cf6\spring-core-4
+ .2.3.RELEASE.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.springframework\spring-test\4.2.3.RELEASE\d7c055b8fb1117ef7504
+ 5679892228a4816cd80e\spring-test-4.2.3.RELEASE.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\org.zapodot\jackson-databind-jav
+ a-optional\2.4.2\588266ff57165736149bc38e07f2875a4fe5969c\jackson-dat
+ abind-java-optional-2.4.2.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\oro\oro\2.0.8\5592374f834645c4ae250f4c9fbb314c9369d69
+ 8\oro-2.0.8.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.
+ 1\ws-commons-java5\ws-commons-java5\1.0.1\a6c8eaf64f49ca191a88d65fd9d
+ c7d9def69cac0\ws-commons-java5-1.0.1.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\wsdl4j\wsdl4j\1.6.2\dec1669fb6801b7328e01a
+ d72fc9e10b69ea06c1\wsdl4j-1.6.2.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\xalan\xalan\2.7.2\d55d3f02a56ec4c25695fe67e1334
+ ff8c2ecea23\xalan-2.7.2.jar \C:\Users\LENOVO PC\.gradle\caches\module
+ s-2\files-2.1\xml-apis\xml-apis-ext\1.3.04\41a8b86b358e87f3f13cf46069
+ 721719105aff66\xml-apis-ext-1.3.04.jar \C:\Users\LENOVO PC\.gradle\ca
+ ches\modules-2\files-2.1\xml-apis\xml-apis\1.4.01\3789d9fada2d3d458c4
+ ba2de349d48780f381ee3\xml-apis-1.4.01.jar \C:\Users\LENOVO PC\.gradle
+ \caches\modules-2\files-2.1\bouncycastle\bcmail-jdk14\138\14ff2dfec85
+ 78f5f6838c4d6a77a86789afe5382\bcmail-jdk14-138.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\bouncycastle\bcprov-jdk14\138\de
+ 366c3243a586eb3c0e2bcde1ed9bb1bfb985ff\bcprov-jdk14-138.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\javax.activation\activa
+ tion\1.1\e6cb541461c2834bdea3eb920f1884d1eb508b50\activation-1.1.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.jdom\com.s
+ pringsource.org.jdom\1.0.0\32e7389479349a9d30cab805d83486b1e865aeaa\c
+ om.springsource.org.jdom-1.0.0.jar \C:\Users\LENOVO PC\.gradle\caches
+ \modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db
+ 7cdedbc40c805dfa\xmlpull-1.1.3.1.jar \C:\Users\LENOVO PC\.gradle\cach
+ es\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f79
+ 4f0ea4030d60b86\xpp3_min-1.1.4c.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\commons-beanutils\commons-beanutils\1.9.2\7a87d
+ 845ad3a155297e8f67d9008f4c1e5656b71\commons-beanutils-1.9.2.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-digester\co
+ mmons-digester\1.8.1\3dec9b9c7ea9342d4dbe8c38560080d85b44a015\commons
+ -digester-1.8.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\commons-collections\commons-collections\3.2.2\8ad72fe39fa8c91ea
+ af12aadb21e0c3661fe26d5\commons-collections-3.2.2.jar \C:\Users\LENOV
+ O PC\.gradle\caches\modules-2\files-2.1\jtidy\jtidy\4aug2000r7-dev\2a
+ ecd44e0c3a7fdcf0ec19f7c58f37a07798f01f\jtidy-4aug2000r7-dev.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcre
+ st-core\1.1\860340562250678d1a344907ac75754e259cdb14\hamcrest-core-1.
+ 1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\backport
+ -util-concurrent\backport-util-concurrent\3.1\682f7ac17fed79e92f8e87d
+ 8455192b63376347b\backport-util-concurrent-3.1.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\xerces\xercesImpl\2.9.1\1136d197
+ e2755bbde296ceee217ec5fe2917477b\xercesImpl-2.9.1.jar \C:\Users\LENOV
+ O PC\.gradle\caches\modules-2\files-2.1\org.apache.ant\ant\1.9.0\d667
+ bc2c030a338720bfcf794d2189ea5c663b9e\ant-1.9.0.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\bsf\bsf\2.4.0\658f324024bb473c4d
+ 15d18b855676fa817353e9\bsf-2.4.0.jar \C:\Users\LENOVO PC\.gradle\cach
+ es\modules-2\files-2.1\org.apache.ws.commons.axiom\axiom-dom\1.2.17\2
+ 7eca9d7db50e5c9201be40dce9aedf6aebc0f58\axiom-dom-1.2.17.jar \C:\User
+ s\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.sp
+ ecs\geronimo-ws-metadata_2.0_spec\1.1.2\7be9f049b4f0f0cf045675be5a0ff
+ 709d57cbc6a\geronimo-ws-metadata_2.0_spec-1.1.2.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\javax.ws.rs\jsr311-api\1.1.1\59
+ 033da2a1afd56af1ac576750a8d0b1830d59e6\jsr311-api-1.1.1.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-httpclient\comm
+ ons-httpclient\3.1\964cd74171f427720480efdec40a7c7f6e58426a\commons-h
+ ttpclient-3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-
+ 2.1\org.apache.commons\com.springsource.org.apache.commons.logging\1.
+ 1.1\7657caf2c78e1d79c74d36f2ae128a115f7cc180\com.springsource.org.apa
+ che.commons.logging-1.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\org.apache.geronimo.specs\geronimo-j2ee-connector_1.6
+ _spec\1.0\a1a1cb635415af603ffba27987ffcd3422fb7801\geronimo-j2ee-conn
+ ector_1.6_spec-1.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\org.gagravarr\vorbis-java-tika\0.6\be5b08ff4c45632975646f286
+ a1d13e325bec59a\vorbis-java-tika-0.6.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\com.healthmarketscience.jackcess\jackcess\
+ 2.1.2\b7f61fbb78919cb851868ce177d8fe626a6b4370\jackcess-2.1.2.jar \C:
+ \Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.healthmarkets
+ cience.jackcess\jackcess-encrypt\2.1.1\effacd7133ab76ee54c0488dd952b1
+ 77bfeb85a3\jackcess-encrypt-2.1.1.jar \C:\Users\LENOVO PC\.gradle\cac
+ hes\modules-2\files-2.1\net.sourceforge.jmatio\jmatio\1.0\df72993ea17
+ d34c3bacd983558d2970a866abaf6\jmatio-1.0.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\org.apache.james\apache-mime4j-core\0.
+ 7.2\a81264fe0265ebe8fd1d8128aad06dc320de6eef\apache-mime4j-core-0.7.2
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apach
+ e.james\apache-mime4j-dom\0.7.2\1c289aa264548a0a1f1b43685a9cb2ab23f67
+ 287\apache-mime4j-dom-0.7.2.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.tukaani\xz\1.5\9c64274b7dbb65288237216e3fae7877
+ fd3f2bee\xz-1.5.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\org.bouncycastle\bcmail-jdk15on\1.52\4995a870400e1554d1c7ed2afc
+ b5d198fae12db9\bcmail-jdk15on-1.52.jar \C:\Users\LENOVO PC\.gradle\ca
+ ches\modules-2\files-2.1\org.bouncycastle\bcprov-jdk15on\1.52\88a941f
+ af9819d371e3174b5ed56a3f3f7d73269\bcprov-jdk15on-1.52.jar \C:\Users\L
+ ENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.poi\poi-scratc
+ hpad\3.13\9d763275e6c7fa05d47e2581606748669e88c55\poi-scratchpad-3.13
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apach
+ e.poi\poi-ooxml\3.13\c364a8f5422d613e3a56db3b4b889f2989d7ee73\poi-oox
+ ml-3.13.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\or
+ g.ccil.cowan.tagsoup\tagsoup\1.2.1\5584627487e984c03456266d3f8802eb85
+ a9ce97\tagsoup-1.2.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2
+ \files-2.1\org.ow2.asm\asm\5.0.4\da08b8cce7bbf903602a25a3a163ae252435
+ 795\asm-5.0.4.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-
+ 2.1\com.googlecode.mp4parser\isoparser\1.0.2\6d9a5c5814ec67178dd1d5a2
+ 5bae874d4697a5b8\isoparser-1.0.2.jar \C:\Users\LENOVO PC\.gradle\cach
+ es\modules-2\files-2.1\com.drewnoakes\metadata-extractor\2.8.0\c771db
+ a842e459b704081212c66182eb351728de\metadata-extractor-2.8.0.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\de.l3s.boilerpipe\b
+ oilerpipe\1.1.0\f62cb75ed52455a9e68d1d05b84c500673340eb2\boilerpipe-1
+ .1.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.r
+ ometools\rome\1.5.1\cc3489f066749bede7fc81f4e80c0d8c9534a210\rome-1.5
+ .1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.gag
+ ravarr\vorbis-java-core\0.6\71deedbdfe6a1b0dcadd6c5ae335e3e9b427524c\
+ vorbis-java-core-0.6.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2
+ \files-2.1\com.googlecode.juniversalchardet\juniversalchardet\1.0.3\c
+ d49678784c46aa8789c060538e0154013bb421b\juniversalchardet-1.0.3.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.codelibs\jh
+ ighlight\1.0.2\992a8a8add10468930efc1f110f2895f68258a1e\jhighlight-1.
+ 0.2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.pf
+ f\java-libpst\0.8.1\ad31986653dac9cb5132ea5b2999c20b4b286255\java-lib
+ pst-0.8.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\
+ com.github.junrar\junrar\0.7\18cc717b85af0b12ba922abf415c2ff4716f8219
+ \junrar-0.7.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.
+ 1\org.apache.cxf\cxf-rt-rs-client\3.0.3\45eabb80eb52ac54111c71e0d6f34
+ c9c93f99b0d\cxf-rt-rs-client-3.0.3.jar \C:\Users\LENOVO PC\.gradle\ca
+ ches\modules-2\files-2.1\org.apache.opennlp\opennlp-tools\1.5.3\826d3
+ 4168b0e4870c9f599ed7f2b8fee4194ba3b\opennlp-tools-1.5.3.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.commons\comm
+ ons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.
+ 3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.goog
+ lecode.json-simple\json-simple\1.1.1\c9ad4a0850ab676c5c64461a05ca524c
+ dfff59f1\json-simple-1.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\mod
+ ules-2\files-2.1\org.json\json\20140107\d1ffca6e2482b002702c6a576166f
+ d685e3370e3\json-20140107.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c86401005
+ 3cb901b7eab25306568\gson-2.2.4.jar \C:\Users\LENOVO PC\.gradle\caches
+ \modules-2\files-2.1\edu.ucar\netcdf4\4.5.5\675d63ecc857c50dd50858011
+ b670160aa30b62\netcdf4-4.5.5.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\edu.ucar\grib\4.5.5\cfe552910e9a8d57ce71134796abb2
+ 81a74ead16\grib-4.5.5.jar \C:\Users\LENOVO PC\.gradle\caches\modules-
+ 2\files-2.1\edu.ucar\cdm\4.5.5\af1748a3d024069cb7fd3fc2591efe806c9145
+ 89\cdm-4.5.5.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\edu.ucar\httpservices\4.5.5\ee5f217be599e5e03f7f0e55e03f9e721a154f
+ 62\httpservices-4.5.5.jar \C:\Users\LENOVO PC\.gradle\caches\modules-
+ 2\files-2.1\org.apache.sis.core\sis-utility\0.5\aaea81deda0e3c7ca2602
+ e7fb9459bcc19894ecf\sis-utility-0.5.jar \C:\Users\LENOVO PC\.gradle\c
+ aches\modules-2\files-2.1\org.apache.sis.storage\sis-netcdf\0.5\2b416
+ e4506caebe7df6dd21b878dae888e0eea39\sis-netcdf-0.5.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\org.apache.sis.core\sis-meta
+ data\0.5\1bbd65e52d27b61c64944b9275c44ccd79f267a7\sis-metadata-0.5.ja
+ r \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.opengis\
+ geoapi\3.0.0\a04e0f361627fb33a140b5aa4c019741f905577\geoapi-3.0.0.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.to
+ mcat\tomcat-servlet-api\8.0.33\cc2becc4bf29a7bfd0d7a4055552683d421859
+ c5\tomcat-servlet-api-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\org.apache.tomcat\tomcat-juli\8.0.33\330aecfa89515
+ 6cea91c576cb6609537152761f9\tomcat-juli-8.0.33.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\org.apache.tomcat\tomcat-jsp-api
+ \8.0.33\896e782956999c2632b3caa0caeb711720f28d7a\tomcat-jsp-api-8.0.3
+ 3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apac
+ he.tomcat\tomcat-el-api\8.0.33\794cf8e8d615c6ac136835867aef2fee125bc7
+ 4b\tomcat-el-api-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\module
+ s-2\files-2.1\org.apache.tomcat\tomcat-jasper-el\8.0.33\9e222fccf6067
+ e10fb6911e1cf426d5b14d99079\tomcat-jasper-el-8.0.33.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tom
+ cat-embed-core\8.0.33\4e7f547fbb2c364cb5e02a58790c5fb89e31efed\tomcat
+ -embed-core-8.0.33.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\jaxen\jaxen\1.1.6\3f8c36d9a0578e8e98f030c662b69888b1430ac0\j
+ axen-1.1.6.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1
+ \org.apache.geronimo.specs\geronimo-stax-api_1.0_spec\1.0.1\1c171093a
+ 8b43aa550c6050ac441abe713ebb4f2\geronimo-stax-api_1.0_spec-1.0.1.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\xom\xom\1.2.5\
+ 4166493b9f04e91b858ba4150b28b4d197f8f8ea\xom-1.2.5.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\org.beanshell\bsh-core\2.0b4
+ \495e25a99e29970ffe8ba0b1d551e1d1a9991fc1\bsh-core-2.0b4.jar \C:\User
+ s\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.owasp.antisamy\ant
+ isamy\1.4.3\6bac1ebc43ac3db223f592ce904ac4c2f3ef26e5\antisamy-1.4.3.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.fasterx
+ ml.jackson.core\jackson-databind\2.4.2\8e31266a272ad25ac4c089734d93e8
+ d811652c1f\jackson-databind-2.4.2.jar \C:\Users\LENOVO PC\.gradle\cac
+ hes\modules-2\files-2.1\xalan\serializer\2.7.2\24247f3bb052ee06897139
+ 3bdb83e04512bb1c3c\serializer-2.7.2.jar \C:\Users\LENOVO PC\.gradle\c
+ aches\modules-2\files-2.1\org.apache.lucene\lucene-core\5.3.1\3686065
+ 3d7e09790ada96aeb1970b4ca396ac5d7\lucene-core-5.3.1.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-qu
+ eryparser\5.3.1\bef0e2ac5b196dbab9d0b7c8cc8196b7ef5dd056\lucene-query
+ parser-5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.apache.lucene\lucene-analyzers-common\5.3.1\bd804dbc1b8f794101
+ 8926e940d20d1016b36c4c\lucene-analyzers-common-5.3.1.jar \C:\Users\LE
+ NOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.solr\solr-core\
+ 5.3.1\dacde184d486749c79f1cfcce456bae721ae6437\solr-core-5.3.1.jar \C
+ :\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.solr\
+ solr-solrj\5.3.1\790150b27e005232510dda39afbbf32830842a9a\solr-solrj-
+ 5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.
+ carrotsearch\hppc\0.5.2\74bcc9d152a928a4ea9ac59a5b45850bf00cd4e\hppc-
+ 0.5.2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.
+ fasterxml.jackson.dataformat\jackson-dataformat-smile\2.5.4\db0c5f1b6
+ e16cb5f5e0505abfcd4b36f3e8bfdc6\jackson-dataformat-smile-2.5.4.jar \C
+ :\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.google.proto
+ buf\protobuf-java\2.5.0\a10732c76bfacdbd633a7eb0f7968b1059a65dfa\prot
+ obuf-java-2.5.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\com.spatial4j\spatial4j\0.4.1\4234d12b1ba4d4b539fb3e29edd948a99
+ 539d9eb\spatial4j-0.4.1.jar \C:\Users\LENOVO PC\.gradle\caches\module
+ s-2\files-2.1\com.tdunning\t-digest\3.1\451ed219688aed5821a789428fd5e
+ 10426d11312\t-digest-3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modul
+ es-2\files-2.1\joda-time\joda-time\2.2\a5f29a7acaddea3f4af307e8cf2d0c
+ c82645fd7d\joda-time-2.2.jar \C:\Users\LENOVO PC\.gradle\caches\modul
+ es-2\files-2.1\org.antlr\antlr-runtime\3.5\baa82bff19059401e90e1b9002
+ 0beb9c96305d7\antlr-runtime-3.5.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\org.apache.hadoop\hadoop-annotations\2.7.2\8069
+ 3ef2884927ee3c5464a7539fcfa4af382e14\hadoop-annotations-2.7.2.jar \C:
+ \Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.hadoop
+ \hadoop-auth\2.7.2\bf613cfec06a1f3d3a91d7f82f9e4af75bc01f72\hadoop-au
+ th-2.7.2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\o
+ rg.apache.hadoop\hadoop-common\2.7.2\422eb48913fa6f81835b3192c97a5765
+ 05b6c192\hadoop-common-2.7.2.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\org.apache.hadoop\hadoop-hdfs\2.7.2\3c304b3d9227fb
+ f8af8bc1cab013271538c3cf0a\hadoop-hdfs-2.7.2.jar \C:\Users\LENOVO PC\
+ .gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime
+ \4.4.1\2f8757f5ac5e38f46c794e5229d1f3c522e9b1df\httpmime-4.4.1.jar \C
+ :\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.lucen
+ e\lucene-analyzers-kuromoji\5.3.1\56dc1408e7f98ae569ed17aa02451cb624e
+ 88d5f\lucene-analyzers-kuromoji-5.3.1.jar \C:\Users\LENOVO PC\.gradle
+ \caches\modules-2\files-2.1\org.apache.lucene\lucene-analyzers-phonet
+ ic\5.3.1\78943ef1718e73973bde9da105885566ad0e07f1\lucene-analyzers-ph
+ onetic-5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.apache.lucene\lucene-backward-codecs\5.3.1\380603f537317a78f9d
+ 9b7421bc2ac87586cb9a1\lucene-backward-codecs-5.3.1.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-cod
+ ecs\5.3.1\5ce45a220258f1d92d8fcdba4dbbb43e4f035835\lucene-codecs-5.3.
+ 1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apac
+ he.lucene\lucene-expressions\5.3.1\2e45ba271969611bc3071b19cd164d6986
+ f85825\lucene-expressions-5.3.1.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\org.apache.lucene\lucene-grouping\5.3.1\92a68af
+ a9b7be5cbc35ca99f23003dfebc940aa7\lucene-grouping-5.3.1.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucen
+ e-highlighter\5.3.1\dd655be794feb9c42981b5c01b9f7f38e8b7f39e\lucene-h
+ ighlighter-5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\fil
+ es-2.1\org.apache.lucene\lucene-join\5.3.1\88f828205c9dfb328c3e0f6000
+ 10665e1934e495\lucene-join-5.3.1.jar \C:\Users\LENOVO PC\.gradle\cach
+ es\modules-2\files-2.1\org.apache.lucene\lucene-memory\5.3.1\7d120aa2
+ 07de0c422132b951585691e5afa645e\lucene-memory-5.3.1.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-mi
+ sc\5.3.1\7891bbc18b372135c2a52b471075b0bdf5f110ec\lucene-misc-5.3.1.j
+ ar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.
+ lucene\lucene-queries\5.3.1\305665b15a8b9b7840c1b804d1cb694b4177e035\
+ lucene-queries-5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2
+ \files-2.1\org.apache.lucene\lucene-sandbox\5.3.1\2ab2b12bf7bec88b879
+ 423898bd32067e3655fa3\lucene-sandbox-5.3.1.jar \C:\Users\LENOVO PC\.g
+ radle\caches\modules-2\files-2.1\org.apache.lucene\lucene-spatial\5.3
+ .1\1b7fc73a7e24f40cb80cdc87d382fc73f6b8c2be\lucene-spatial-5.3.1.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.luc
+ ene\lucene-suggest\5.3.1\3da861f35aeefa786574aecec3272ea5924e45b8\luc
+ ene-suggest-5.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\fi
+ les-2.1\org.apache.zookeeper\zookeeper\3.4.6\1b2502e29da1ebaade2357cd
+ 1de35a855fa3755\zookeeper-3.4.6.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\org.codehaus.woodstox\stax2-api\3.1.4\ac19014b1
+ e6a7c08aad07fe114af792676b685b7\stax2-api-3.1.4.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\org.htrace\htrace-core\3.0.4\d7
+ 461828faf28411f37f8570d896292db277d838\htrace-core-3.0.4.jar \C:\User
+ s\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.noggit\noggit\0.6\
+ fa94a59c44b39ee710f3c9451750119e432326c0\noggit-0.6.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-commons\4.1
+ \f8b86f4ee6e02082f63a658e00eb5506821253c6\asm-commons-4.1.jar \C:\Use
+ rs\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.restlet.jee\org.r
+ estlet\2.3.0\4c5d184e23fa729726668a90dc7338d80c4e7e6f\org.restlet-2.3
+ .0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.res
+ tlet.jee\org.restlet.ext.servlet\2.3.0\9303e20d0397c0304342943560c3a1
+ 693fd7ce7d\org.restlet.ext.servlet-2.3.0.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\woodstox\wstx-asl\3.2.7\252c7faae9ce98
+ cb9c9d29f02db88f7373e7f407\wstx-asl-3.2.7.jar \C:\Users\LENOVO PC\.gr
+ adle\caches\modules-2\files-2.1\org.bouncycastle\bctsp-jdk14\1.38\482
+ 1122f8390d15f4b5ee652621e2a2bb1f1bf16\bctsp-jdk14-1.38.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcpkix-
+ jdk15on\1.52\b8ffac2bbc6626f86909589c8cc63637cc936504\bcpkix-jdk15on-
+ 1.52.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.a
+ pache.poi\poi-ooxml-schemas\3.13\56fb0b9f3ffc3d7f7fc9b59e17b5fa2c3ab9
+ 21e7\poi-ooxml-schemas-3.13.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.aspectj\aspectjrt\1.8.0\302d0fe0abba26bbf5f31c3
+ cd5337b3125c744e3\aspectjrt-1.8.0.jar \C:\Users\LENOVO PC\.gradle\cac
+ hes\modules-2\files-2.1\com.adobe.xmp\xmpcore\5.1.2\55615fa2582424e38
+ 705487d1d3969af8554f637\xmpcore-5.1.2.jar \C:\Users\LENOVO PC\.gradle
+ \caches\modules-2\files-2.1\com.rometools\rome-utils\1.5.1\3a3d6473a2
+ f5d55fb31bf6c269af963fdea13b54\rome-utils-1.5.1.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging
+ -api\1.1\7d4cf5231d46c8524f9b9ed75bb2d1c69ab93322\commons-logging-api
+ -1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.a
+ pache.commons\commons-vfs2\2.0\b5af3b9c96b060d77c68fa5ac9384b402dd580
+ 13\commons-vfs2-2.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\
+ files-2.1\org.apache.cxf\cxf-rt-transports-http\3.0.3\d0fe9957966496b
+ cc9550dddfbe5100d84105d75\cxf-rt-transports-http-3.0.3.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.cxf\cxf-core\
+ 3.0.3\d1c97f02c6ca0bab8b3c5315237c510523b86310\cxf-core-3.0.3.jar \C:
+ \Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.cxf\cx
+ f-rt-frontend-jaxrs\3.0.3\284a35801aef259c0d61edb938865b5b125403ac\cx
+ f-rt-frontend-jaxrs-3.0.3.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\org.apache.opennlp\opennlp-maxent\3.0.3\55e39e6b46e71
+ f35229cdd6950e72d8cce3b5fd4\opennlp-maxent-3.0.3.jar \C:\Users\LENOVO
+  PC\.gradle\caches\modules-2\files-2.1\net.sf.jwordnet\jwnl\1.3.3\710
+ 8e5b6a8875fe0488d942238575407c7ab8649\jwnl-1.3.3.jar \C:\Users\LENOVO
+  PC\.gradle\caches\modules-2\files-2.1\net.jcip\jcip-annotations\1.0\
+ afba4942caaeaf46aab0b976afd57cc7c181467e\jcip-annotations-1.0.jar \C:
+ \Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\
+ jna\4.1.0\1c12d070e602efd8021891cdd7fd18bc129372d4\jna-4.1.0.jar \C:\
+ Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.jdom\jdom2\2.0
+ .4\4b65e55cc61b34bc634b25f0359d1242e4c519de\jdom2-2.0.4.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.7.2\d
+ 7e275ba05aa380ca254f72d0c0ffebaedc3adcf\jsoup-1.7.2.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\edu.ucar\jj2000\5.2\b857c9b
+ df12fe17d8ef98218eaa39e6a0c6ff493\jj2000-5.2.jar \C:\Users\LENOVO PC\
+ .gradle\caches\modules-2\files-2.1\org.itadaki\bzip2\0.9.1\47ca95f71e
+ 3ccae756c4a24354d48069c58f475c\bzip2-0.9.1.jar \C:\Users\LENOVO PC\.g
+ radle\caches\modules-2\files-2.1\edu.ucar\udunits\4.5.5\d8c8d65ade136
+ 66eedcf764889c69321c247f153\udunits-4.5.5.jar \C:\Users\LENOVO PC\.gr
+ adle\caches\modules-2\files-2.1\org.quartz-scheduler\quartz\2.2.0\2eb
+ 16fce055d5f3c9d65420f6fc4efd3a079a3d8\quartz-2.2.0.jar \C:\Users\LENO
+ VO PC\.gradle\caches\modules-2\files-2.1\net.sf.ehcache\ehcache-core\
+ 2.6.2\3baecd92015a9f8fe4cf51c8b5d3a5bddcdd3e86\ehcache-core-2.6.2.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.beust\jco
+ mmander\1.35\47592e181b0bdbbeb63029e08c5e74f6803c4edd\jcommander-1.35
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.slf4j
+ \jcl-over-slf4j\1.7.7\56003dcd0a31deea6391b9e2ef2f2dc90b205a92\jcl-ov
+ er-slf4j-1.7.7.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\org.apache.sis.storage\sis-storage\0.5\29d1ea6422b68fbfe1f1702f1
+ 22019ae376ee2c8\sis-storage-0.5.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\org.apache.sis.core\sis-referencing\0.5\377246c
+ 70fd858346fab8a0e554bed3b3cfcde70\sis-referencing-0.5.jar \C:\Users\L
+ ENOVO PC\.gradle\caches\modules-2\files-2.1\javax.measure\jsr-275\0.9
+ .3\ab2fb094fc5297ae5636ef6ed0d6051d5a656588\jsr-275-0.9.3.jar \C:\Use
+ rs\LENOVO PC\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3
+ ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar \C:\Users\LENOV
+ O PC\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-conti
+ nuation\9.2.11.v20150529\75cdf86a2d808dde511360884fe090d74327886\jett
+ y-continuation-9.2.11.v20150529.jar \C:\Users\LENOVO PC\.gradle\cache
+ s\modules-2\files-2.1\org.eclipse.jetty\jetty-deploy\9.2.11.v20150529
+ \5a302b965bae412e9a8fded5beccfde615d889a9\jetty-deploy-9.2.11.v201505
+ 29.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.ecl
+ ipse.jetty\jetty-http\9.2.11.v20150529\303ac0a8ee866eff197188d69b59d3
+ bb2d7405f9\jetty-http-9.2.11.v20150529.jar \C:\Users\LENOVO PC\.gradl
+ e\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\9.2.11.v20150
+ 529\8d13b907fcc1bc190901f6842752fc6be8d406cf\jetty-io-9.2.11.v2015052
+ 9.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.ecli
+ pse.jetty\jetty-jmx\9.2.11.v20150529\6092ba81b8d1c1c88b160b8010b7f0bc
+ 7ecc5dec\jetty-jmx-9.2.11.v20150529.jar \C:\Users\LENOVO PC\.gradle\c
+ aches\modules-2\files-2.1\org.eclipse.jetty\jetty-rewrite\9.2.11.v201
+ 50529\7e019b21adfd7ac88bfaa4f0560f1d511b02b731\jetty-rewrite-9.2.11.v
+ 20150529.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\o
+ rg.eclipse.jetty\jetty-security\9.2.11.v20150529\874b41038d29d0235926
+ f306c8df6899d276922e\jetty-security-9.2.11.v20150529.jar \C:\Users\LE
+ NOVO PC\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-se
+ rver\9.2.11.v20150529\bd80f760d08db7a1416342c13d470ba8c273ba66\jetty-
+ server-9.2.11.v20150529.jar \C:\Users\LENOVO PC\.gradle\caches\module
+ s-2\files-2.1\org.eclipse.jetty\jetty-servlet\9.2.11.v20150529\eaae94
+ e6432866d7794b9547bc0cdaa423de54ba\jetty-servlet-9.2.11.v20150529.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.eclipse.j
+ etty\jetty-servlets\9.2.11.v20150529\325fca6518de46cd8c860c2927c3a32f
+ deb05d6\jetty-servlets-9.2.11.v20150529.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-util\9.2.11.v20
+ 150529\5f547da1eb601c2a4697ecfeb425f8f6961800c3\jetty-util-9.2.11.v20
+ 150529.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org
+ .eclipse.jetty\jetty-webapp\9.2.11.v20150529\499880de6fe26368d4fe53a7
+ 8b54764c6e34f083\jetty-webapp-9.2.11.v20150529.jar \C:\Users\LENOVO P
+ C\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-xml\9.2.
+ 11.v20150529\f3549e42db4330d90f52cf689699e2247308f986\jetty-xml-9.2.1
+ 1.v20150529.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.
+ 1\org.antlr\stringtemplate\3.2.1\59ec8083721eae215c6f3caee944c410d2be
+ 34de\stringtemplate-3.2.1.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\jakarta-regexp\jakarta-regexp\1.4\ea514a179ac1dd7e81c
+ 7e6594468b9b9910d298\jakarta-regexp-1.4.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\org.apache.lucene\lucene-spatial3d\5.3.
+ 1\c0af329dfdbff3aa88b8370bc74e9a9ee1df5a6b\lucene-spatial3d-5.3.1.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\jline\jline\0
+ .9.94\99a18e9a44834afdebc467294e1138364c207402\jline-0.9.94.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\io.netty\netty\3.7.
+ 0.Final\7a8c35599c68c0bf383df74469aa3e03d9aca87\netty-3.7.0.Final.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.mortbay.j
+ etty\jetty-util\6.1.26\e5642fe0399814e1687d55a3862aa5a3417226a9\jetty
+ -util-6.1.26.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.ow2.asm\asm-tree\4.1\51085abcc4cb6c6e1cb5551e6f999eb8e31c5b2d\
+ asm-tree-4.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.bouncycastle\bcprov-jdk14\1.38\de366c3243a586eb3c0e2bcde1ed9bb
+ 1bfb985ff\bcprov-jdk14-1.38.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\org.bouncycastle\bcmail-jdk14\1.38\14ff2dfec8578f5f
+ 6838c4d6a77a86789afe5382\bcmail-jdk14-1.38.jar \C:\Users\LENOVO PC\.g
+ radle\caches\modules-2\files-2.1\org.apache.xmlbeans\xmlbeans\2.6.0\2
+ 9e80d2dd51f9dcdef8f9ffaee0d4dc1c9bbfc87\xmlbeans-2.6.0.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.maven.scm\mav
+ en-scm-api\1.4\e294693ce217bd6f470b728127854e6ca787fd29\maven-scm-api
+ -1.4.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.a
+ pache.maven.scm\maven-scm-provider-svnexe\1.4\b3213b40157b701ba079b73
+ 8baac391e41418c18\maven-scm-provider-svnexe-1.4.jar \C:\Users\LENOVO 
+ PC\.gradle\caches\modules-2\files-2.1\javax.ws.rs\javax.ws.rs-api\2.0
+ .1\104e9c2b5583cfcfeac0402316221648d6d8ea6b\javax.ws.rs-api-2.0.1.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\javax.annotat
+ ion\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146
+ \javax.annotation-api-1.2.jar \C:\Users\LENOVO PC\.gradle\caches\modu
+ les-2\files-2.1\c3p0\c3p0\0.9.1.1\302704f30c6e7abb7a0457f7771739e03c9
+ 73e80\c3p0-0.9.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\a
+ ntlr-2.7.7.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1
+ \org.codehaus.plexus\plexus-utils\1.5.6\8fb6b798a4036048b3005e058553b
+ f21a87802ed\plexus-utils-1.5.6.jar \C:\Users\LENOVO PC\.gradle\caches
+ \modules-2\files-2.1\org.apache.maven.scm\maven-scm-provider-svn-comm
+ ons\1.4\54bc1dc24c5d205b4d251a83f4ea63808c21a628\maven-scm-provider-s
+ vn-commons-1.4.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\regexp\regexp\1.3\973df2b78b67bcd3144c3dbbb88da691065a3f8d\regex
+ p-1.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.
+ apache.xmlgraphics\batik-svg-dom\1.8\97c9d00d08c849066d2359b0f1124f0e
+ 82b952c2\batik-svg-dom-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\mod
+ ules-2\files-2.1\org.apache.xmlgraphics\batik-bridge\1.8\4ab4110b0ed4
+ 650ef50d4a344f0ca5c027f3283a\batik-bridge-1.8.jar \C:\Users\LENOVO PC
+ \.gradle\caches\modules-2\files-2.1\org.apache.xmlgraphics\batik-awt-
+ util\1.8\5cd7f97060cdfab0139e70504962d48ceee71ef2\batik-awt-util-1.8.
+ jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache
+ .xmlgraphics\batik-gvt\1.8\fbde4cd3c43001c162446cf43093d09fda346e11\b
+ atik-gvt-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2
+ .1\org.apache.xmlgraphics\batik-transcoder\1.8\f330b3e9946ff21ddf3ea6
+ d4f58ae44145cfd362\batik-transcoder-1.8.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\org.apache.xmlgraphics\batik-extension\
+ 1.8\c5e9e1f07a65c89d2be92fd63e1b0f64357a46db\batik-extension-1.8.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.ava
+ lon.framework\avalon-framework-api\4.3.1\2dacadeb49bc14420990b1f28897
+ d46f96e2181d\avalon-framework-api-4.3.1.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\org.apache.avalon.framework\avalon-fram
+ ework-impl\4.3.1\2d5f5a07fd14513ce6d7a7bfaff69419c26dbd0b\avalon-fram
+ ework-impl-4.3.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\fil
+ es-2.1\org.apache.xmlgraphics\batik-dom\1.8\4e696cf01cee52e8c4f86c842
+ b5d8314e689209c\batik-dom-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\
+ modules-2\files-2.1\org.apache.xmlgraphics\batik-parser\1.8\86ec4ab0c
+ 828b570d0ccbeba14f85ac011a333f2\batik-parser-1.8.jar \C:\Users\LENOVO
+  PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlgraphics\batik-a
+ nim\1.8\68197dfa3643a906ba250025a03dc42e6efe2dec\batik-anim-1.8.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlg
+ raphics\batik-script\1.8\5bda6a9d45065b184c83c46b64d8002b4e0ab7c7\bat
+ ik-script-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-
+ 2.1\org.apache.xmlgraphics\batik-xml\1.8\9bf0ee759fed1e3a2e4ad41819ea
+ c69ff4873732\batik-xml-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\mod
+ ules-2\files-2.1\org.apache.xmlgraphics\batik-svggen\1.8\c4684e18303e
+ 931845df704f9b9f6995fd770789\batik-svggen-1.8.jar \C:\Users\LENOVO PC
+ \.gradle\caches\modules-2\files-2.1\junit\junit\3.8.2\7e4cde26b53a9a0
+ e3fe5b00d1dbbc7cc1d46060\junit-3.8.2.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.4.1
+ \16d0bc512222f1253ee6b64d389c84e22f697f0\httpclient-4.4.1.jar \C:\Use
+ rs\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1
+ .7.12\8e20852d05222dc286bf1c71d78d0531e177c317\slf4j-api-1.7.12.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.pdfb
+ ox\fontbox\1.8.12\272ab4b5d0fd99dce8d03c8b5befd393385d79c2\fontbox-1.
+ 8.12.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.a
+ pache.pdfbox\jempbox\1.8.12\426450c573c19f6f2c751a7a52c11931b712c9f6\
+ jempbox-1.8.12.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\org.apache.tomcat\tomcat-annotations-api\8.0.33\9d9e4b67315fbc73
+ f346dabff8d63b433464ab2b\tomcat-annotations-api-8.0.33.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.spec
+ s\geronimo-activation_1.1_spec\1.1\f15af1b53fba7f23ce5e9de4fb57a88585
+ aa9eee\geronimo-activation_1.1_spec-1.1.jar \C:\Users\LENOVO PC\.grad
+ le\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core
+ \2.5.4\a57a2df1a23ca1ee32f129173ba7f5feaa9ac24\jackson-core-2.5.4.jar
+  \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.googlecod
+ e.concurrentlinkedhashmap\concurrentlinkedhashmap-lru\1.2\4316d710b66
+ 19ffe210c98deb2b0893587dad454\concurrentlinkedhashmap-lru-1.2.jar \C:
+ \Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-configura
+ tion\commons-configuration\1.6\32cadde23955d7681b0d94a2715846d20b4252
+ 35\commons-configuration-1.6.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\org.codehaus.woodstox\woodstox-core-asl\4.4.1\84fe
+ e5eb1a4a1cefe65b6883c73b3fa83be3c1a1\woodstox-core-asl-4.4.1.jar \C:\
+ Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\javax.xml.stream\s
+ tax-api\1.0-2\d6337b0de8b25e53e81b922352fbea9f9f57ba0b\stax-api-1.0-2
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\commons-l
+ ang\commons-lang\2.6\ce1edb914c94ebc388f086c6827e8bdeec71ac2\commons-
+ lang-2.6.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\o
+ rg.jdom\jdom\2.0.2\d06c71e0df0ac4b94deb737718580ccce22d92e8\jdom-2.0.
+ 2.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\log4j\lo
+ g4j\1.2.17\5af35056b4d257e4b64b9e8069c0746e8b08629f\log4j-1.2.17.jar 
+ \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.dir
+ ectory.server\apacheds-kerberos-codec\2.0.0-M15\1c16e4e477183641c5f0d
+ d5cdecd27ec331bacb5\apacheds-kerberos-codec-2.0.0-M15.jar \C:\Users\L
+ ENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.curator\curato
+ r-framework\2.7.1\8c7b1eeb78e43bb91ea737111ba3dec0512be876\curator-fr
+ amework-2.7.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-
+ 2.1\org.apache.directory.server\apacheds-i18n\2.0.0-M15\71c61c8468315
+ 2ec2a6a65f3f96fe534e304fa22\apacheds-i18n-2.0.0-M15.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.apache.directory.api\ap
+ i-asn1-api\1.0.0-M20\5e6486ffa3125ba44dc410ead166e1d6ba8ac76d\api-asn
+ 1-api-1.0.0-M20.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\org.apache.directory.api\api-util\1.0.0-M20\a871abf060b3cf83fc6
+ dc4d7e3d151fce50ac3cb\api-util-1.0.0-M20.jar \C:\Users\LENOVO PC\.gra
+ dle\caches\modules-2\files-2.1\org.apache.curator\curator-client\2.7.
+ 1\a591dfc085db3e9d4d480381cc7e6ae8a26b34af\curator-client-2.7.1.jar \
+ C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.comm
+ ons\commons-math3\3.1.1\6719d757a98ff24a83d9d727bef9cec83f59b6e1\comm
+ ons-math3-3.1.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\file
+ s-2.1\xmlenc\xmlenc\0.52\d82554efbe65906d83b3d97bd7509289e9db561a\xml
+ enc-0.52.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\o
+ rg.mortbay.jetty\jetty\6.1.26\2f546e289fddd5b1fab1d4199fbb6e9ef43ee4b
+ 0\jetty-6.1.26.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\javax.servlet.jsp\jsp-api\2.1\63f943103f250ef1f3a4d5e94d145a0f96
+ 1f5316\jsp-api-2.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\f
+ iles-2.1\com.sun.jersey\jersey-core\1.9\8341846f18187013bb9e27e46b7ee
+ 00a6395daf4\jersey-core-1.9.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\com.sun.jersey\jersey-json\1.9\1aa73e1896bcc7013fed
+ 247157d7f676226eb432\jersey-json-1.9.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\com.sun.jersey\jersey-server\1.9\3a6ea7cc5
+ e15c824953f9f3ece2201b634d90d18\jersey-server-1.9.jar \C:\Users\LENOV
+ O PC\.gradle\caches\modules-2\files-2.1\net.java.dev.jets3t\jets3t\0.
+ 9.0\792bc96ee7e57b89f472aa0cb5a31015b9f59c96\jets3t-0.9.0.jar \C:\Use
+ rs\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.codehaus.jackson\
+ jackson-core-asl\1.9.13\3c304d70f42f832e0a86d45bd437f692129299a4\jack
+ son-core-asl-1.9.13.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\
+ files-2.1\org.codehaus.jackson\jackson-mapper-asl\1.9.13\1ee2f2bed0e5
+ dd29d1cb155a166e6f8d50bbddb7\jackson-mapper-asl-1.9.13.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.avro\avro\1.7
+ .4\416e7030879814f52845b97f04bb50ecd1cef372\avro-1.7.4.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\com.jcraft\jsch\0.1.42\a
+ 86104b0f2e0c0bab5b0df836065823a99b5e334\jsch-0.1.42.jar \C:\Users\LEN
+ OVO PC\.gradle\caches\modules-2\files-2.1\org.apache.curator\curator-
+ recipes\2.7.1\a2c180efc6a38a4f8c9197eb35bb4eb5716cd2fa\curator-recipe
+ s-2.7.1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\co
+ m.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10
+ a532948\jsr305-3.0.0.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2
+ \files-2.1\org.apache.htrace\htrace-core\3.1.0-incubating\f73606e7c9e
+ de5802335c290bf47490ad6d51df3\htrace-core-3.1.0-incubating.jar \C:\Us
+ ers\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.codehaus.jettiso
+ n\jettison\1.1\1a01a2a1218fcf9faa2cc2a6ced025bdea687262\jettison-1.1.
+ jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.sun.xm
+ l.bind\jaxb-impl\2.2.3-1\56baae106392040a45a06d4a41099173425da1e6\jax
+ b-impl-2.2.3-1.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\org.codehaus.jackson\jackson-jaxrs\1.8.3\3604ca9f572170e2ef58131
+ 41ec1f0e0100efd19\jackson-jaxrs-1.8.3.jar \C:\Users\LENOVO PC\.gradle
+ \caches\modules-2\files-2.1\org.codehaus.jackson\jackson-xc\1.8.3\122
+ 6667dcdb7c259b3ee07e112ed83446554516e\jackson-xc-1.8.3.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\asm\asm\3.1\c157def14271
+ 4c544bdea2e6144645702adf7097\asm-3.1.jar \C:\Users\LENOVO PC\.gradle\
+ caches\modules-2\files-2.1\com.jamesmurty.utils\java-xmlbuilder\0.4\a
+ c5962e48cdee3a0a6e1f8e00fcb594747ac5aaf\java-xmlbuilder-0.4.jar \C:\U
+ sers\LENOVO PC\.gradle\caches\modules-2\files-2.1\com.thoughtworks.pa
+ ranamer\paranamer\2.3\4a85963a752c0a2f715c3924bfc686865e7e1bc6\parana
+ mer-2.3.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\or
+ g.xerial.snappy\snappy-java\1.0.4.1\f88b89a5a21a466aeb0ecf0c063605bd5
+ 84b4947\snappy-java-1.0.4.1.jar \C:\Users\LENOVO PC\.gradle\caches\mo
+ dules-2\files-2.1\javax.xml.bind\jaxb-api\2.2.2\aeb3021ca93dde265796d
+ 82015beecdcff95bf09\jaxb-api-2.2.2.jar \C:\Users\LENOVO PC\.gradle\ca
+ ches\modules-2\files-2.1\commons-daemon\commons-daemon\1.0.13\750856a
+ 1fdb3ddf721ccf73c3518e4211cffc3a3\commons-daemon-1.0.13.jar \C:\Users
+ \LENOVO PC\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.0.
+ 23.Final\294104aaf1781d6a56a07d561e792c5d0c95f45\netty-all-4.0.23.Fin
+ al.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.fus
+ esource.leveldbjni\leveldbjni-all\1.8\707350a2eeb1fa2ed77a32ddb3893ed
+ 308e941db\leveldbjni-all-1.8.jar \C:\Users\LENOVO PC\.gradle\caches\m
+ odules-2\files-2.1\org.apache.xmlgraphics\batik-ext\1.8\8713f3238cfac
+ 337624a90c3ad7d45d7bc6fb1b5\batik-ext-1.8.jar \C:\Users\LENOVO PC\.gr
+ adle\caches\modules-2\files-2.1\org.apache.xmlgraphics\batik-css\1.8\
+ 2b3f22cc65702a0821b7f0178d055282a1cdde59\batik-css-1.8.jar \C:\Users\
+ LENOVO PC\.gradle\caches\modules-2\files-2.1\org.apache.xmlgraphics\b
+ atik-util\1.8\35dcd204f397d6976290ca48ffa0011ba9b7ef43\batik-util-1.8
+ .jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files-2.1\org.slf4j
+ \slf4j-log4j12\1.7.10\b3eeae7d1765f988a1f45ea81517191315c69c9e\slf4j-
+ log4j12-1.7.10.jar \C:\Users\LENOVO PC\.gradle\caches\modules-2\files
+ -2.1\javax.servlet\servlet-api\2.5\5959582d97d8b61f4d154ca9e495aafd16
+ 726e34\servlet-api-2.5.jar 
+
