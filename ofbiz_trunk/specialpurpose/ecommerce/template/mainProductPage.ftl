@@ -79,26 +79,36 @@
      
    </div> 
    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">  <#if (requestAttributes.topLevelList)??>
+    <#assign topLevelList = requestAttributes.topLevelList>
+    </#if>
+  	<#if (topLevelList?has_content)>
+    	<@fillTree rootCat=completedTree/>
+  	</#if>
+  
+    	
         <ul class="nav navbar-nav nav_1">
             <li><a class="color3" href="product.html">Home</a></li>
+            <#macro fillTree rootCat>
+  	    <#if (rootCat?has_content)>
+    	<#list rootCat?sort_by("productCategoryId") as root>
+    	  <#if root.categoryName??>
 			<li class="dropdown mega-dropdown active">
-			    <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>				
+			    <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">${root.categoryName?if_exists}<span class="caret"></span></a>
+			    <#if root.child?has_content>
 				<div class="dropdown-menu mega-dropdown-menu">
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu1</h4>
 									<ul>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Bags</a></li>
-										<li><a href="product.html">Caps & Hats</a></li>
-										<li><a href="product.html">Hoodies & Sweatshirts</a></li>
+									<#list root.child as cRoot>
+										<li><a href="product.html">${cRoot.categoryName?if_exists}</a></li>
+								    </#list>
 										
 									</ul>	
 							</div>							
 						</div>
-						<div class="col1">
+						<!-- div class="col1">
 							<div class="h_nav">
 								<h4>Submenu2</h4>
 								<ul>
@@ -139,16 +149,20 @@
 									<li><a href="product.html">Jewellery</a></li>
 								</ul>	
 							</div>							
-						</div>
+						</div -->
 						<div class="col1 col5">
 						<img src="images/me1.png" class="img-responsive" alt="">
 						</div>
 						<div class="clearfix"></div>
 					</div>                  
-				</div>				
+				</div>
+				</#if>				
 			</li>
-            
-    		<li class="dropdown mega-dropdown active">
+			</#if>
+			</#list>
+          </#if>
+         </#macro>
+    		<!-- li class="dropdown mega-dropdown active">
 			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>				
 				<div class="dropdown-menu " role="menu">
                     <div class="menu-top" >
@@ -347,7 +361,7 @@
 			<li><a class="color3" href="product.html">Sale</a></li>
 			<li><a class="color4" href="404.html">About</a></li>
             
-            <li ><a class="color6" href="contact.html">Contact</a></li>
+            <li ><a class="color6" href="contact.html">Contact</a></li -->
         </ul>
      </div><!-- /.navbar-collapse -->
 
