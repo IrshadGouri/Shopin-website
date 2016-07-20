@@ -330,6 +330,29 @@ under the License.
             </widgets>
         </section>
     </screen>
+    <!-- Top Level Screens -->
+    <screen name="custome-main">
+        <section>
+            <actions>
+                <set field="titleProperty" value="PageTitleMain"/>
+                <set field="headerItem" value="main"/>
+                <set field="randomSurveyGroup" value="testSurveyGroup"/>
+
+                <script location="component://ecommerce/groovyScripts/Main.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific>
+                            <html><html-template location="component://ecommerce/template/Main.ftl"/></html>
+                        </platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
     <screen name="login">
         <section>
             <actions>

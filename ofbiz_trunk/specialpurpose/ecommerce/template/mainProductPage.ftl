@@ -3,23 +3,16 @@
 <html>
 <head>
 <title>Shopin</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shopin" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--theme-style-->
-<link href="css/style4.css" rel="stylesheet" type="text/css" media="all" />	
-<link href="css/style44.css" rel="stylesheet" type="text/css" media="all" />	
-<script src="js/jquery-1.11.0.min.js"></script>
 <!--//theme-style-->
-<script src="js/jquery.min.js"></script>
 <!--- start-rate---->
-<script src="js/jstarbox.js"></script>
 
 
 	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
