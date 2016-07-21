@@ -465,21 +465,36 @@
 			<div class="container">
 				<div class="content-top">
 				<div class="col-md-12">
-				<div class="col-md-6">
-							<a href="single.html"><img src="images/pi1.jpg" class="img-responsive" alt="">
+				<#if productCategoryList?has_content>
+                    <#list productCategoryList as childCategoryList>
+                    <#assign cateCount = 0/>	
+                    <#list childCategoryList as productCategory>
+                       <#if (cateCount > 2)>
+                            <tr>
+                            <#assign cateCount = 0/>
+                       </#if>	
+                       <#assign productCategoryId = productCategory.productCategoryId/>
+                       <#assign categoryImageUrl = "/images/defaultImage.jpg">
+                       <#assign productCategoryMembers = delegator.findByAnd("ProductCategoryAndMember", Static["org.ofbiz.base.util.UtilMisc"].toMap("productCategoryId", productCategoryId), Static["org.ofbiz.base.util.UtilMisc"].toList("-quantity"), false)>
+                       <#if productCategory.categoryImageUrl?has_content>
+                            <#assign categoryImageUrl = productCategory.categoryImageUrl/>
+                       <#elseif productCategoryMembers?has_content>
+                            <#assign productCategoryMember = Static["org.ofbiz.entity.util.EntityUtil"].getFirst(productCategoryMembers)/>
+                            <#assign product = delegator.findOne("Product", Static["org.ofbiz.base.util.UtilMisc"].toMap("productId", productCategoryMember.productId), false)/>
+                            <#if product.smallImageUrl?has_content>
+                                <#assign categoryImageUrl = product.smallImageUrl/>
+                            </#if>
+                       </#if>	
+				        <div class="col-md-6">
+							<a href="single.html"><img src="${categoryImageUrl}" class="img-responsive" alt="">
 							<div class="col-pic">
-								<h5>For Men</h5>
+								<h5>${productCategory.categoryName!productCategoryId}</h5>
 								<button type="button" class="btn btn-danger">SHOP NOW</button>
 							</div></a>
-						</div>
-						
-						<div class="col-md-6">
-							<a href="single.html"><img src="images/pi3.jpg" class="img-responsive" alt="">
-							<div class="col-pic">
-								<h5>For WOMAN</h5>
-								<button type="button" class="btn btn-danger">SHOP NOW</button>
-							</div></a>
-						</div>
+						  </div>
+						</#list>
+                     </#list>
+                     </#if>						
 				</div>
 				
 					<!--<div class="col-md-6 col-md">
@@ -531,18 +546,17 @@
 				<div class="content-mid">
 				<h3>Feature Product</h3>
 				<label class="line"></label>
-			
 				<div class="col-md-3 brand-grid">
-					<img src="images/ic.png" class="img-responsive" alt="">
+					<img src="/ecommerce/img/ic.png" class="img-responsive" alt="">
 				</div>
 				<div class="col-md-3 brand-grid">
-					<img src="images/ic1.png" class="img-responsive" alt="">
+					<img src="/ecommerce/img/ic1.png" class="img-responsive" alt="">
 				</div>
 				<div class="col-md-3 brand-grid">
-					<img src="images/ic2.png" class="img-responsive" alt="">
+					<img src="/ecommerce/img/ic2.png" class="img-responsive" alt="">
 				</div>
 				<div class="col-md-3 brand-grid">
-					<img src="images/ic3.png" class="img-responsive" alt="">
+					<img src="/ecommerce/img/ic3.png" class="img-responsive" alt="">
 				</div>
 					<div class="clearfix"></div>
 			</div>

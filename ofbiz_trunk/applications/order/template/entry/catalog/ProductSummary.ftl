@@ -71,6 +71,7 @@ ${virtualJavaScript!}
     <#assign productInfoLinkId = productInfoLinkId + product.productId/>
     <#assign productDetailId = "productDetailId"/>
     <#assign productDetailId = productDetailId + product.productId/>
+    =======${productInfoLinkId}======
     <div class="productsummary">
         <div class="smallimage">
             <a href="${productUrl}">
