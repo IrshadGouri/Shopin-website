@@ -75,6 +75,7 @@ under the License.
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/simpleCart.min.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/jquery.chocolat.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/jstarbox.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/responsiveslides.min.js" global="true"/>
             </actions>
             <widgets>
                <section>

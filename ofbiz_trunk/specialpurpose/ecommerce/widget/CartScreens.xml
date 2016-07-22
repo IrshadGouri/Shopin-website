@@ -67,10 +67,7 @@ under the License.
     <screen name="showcart">
         <section>
             <actions>
-                <set field="leftbarScreenName" value="leftbar"/>
-                <set field="MainColumnStyle" value="center"/>
                 <!--set field="MainColumnStyle" value="leftonly"/-->
-
                 <set field="titleProperty" value="PageTitleShoppingCart"/>
                 <set field="headerItem" value="Shopping Cart"/>
                 <property-to-field resource="order" property="orderPreference.giftEnable" field="giftEnable" default="Y"/>
@@ -80,7 +77,7 @@ under the License.
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-                        <platform-specific><html><html-template location="component://ecommerce/template/cart/ShowCart.ftl"/></html></platform-specific>
+                        <platform-specific><html><html-template location="component://ecommerce/template/cart/Checkout.ftl"/></html></platform-specific>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
