@@ -649,26 +649,7 @@
 			$('a.picture').Chocolat();
 		});
 <#-------------------------------------------------------------------------------------callDocument function-->
-    function callDocument(id, parentCategoryStr) {
-        var checkUrl = '<@ofbizUrl>productCategoryList</@ofbizUrl>';
-        if(checkUrl.search("http"))
-            var ajaxUrl = '<@ofbizUrl>productCategoryList</@ofbizUrl>';
-        else
-            var ajaxUrl = '<@ofbizUrl>productCategoryListSecure</@ofbizUrl>';
 
-        //jQuerry Ajax Request
-        jQuery.ajax({
-            url: ajaxUrl,
-            type: 'POST',
-            data: {"category_id" : id, "parentCategoryStr" : parentCategoryStr},
-            error: function(msg) {
-                alert("An error occurred loading content! : " + msg);
-            },
-            success: function(msg) {
-                jQuery('#div3').html(msg);
-            }
-        });
-     }
 		</script>
 
 </body>

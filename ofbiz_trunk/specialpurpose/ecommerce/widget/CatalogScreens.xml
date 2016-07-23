@@ -259,9 +259,6 @@ under the License.
     <screen name="product">
         <section>
             <actions>
-                <set field="leftbarScreenName" value="leftbar"/>
-                <set field="rightbarScreenName" value="rightbar"/>
-                <set field="MainColumnStyle" value="center"/>
                 <set field="titleProperty" value="PageTitleProductPage"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/images/productAdditionalView.js" global="true"/>
                 <set field="configproductdetailScreen" value="component://ecommerce/widget/CatalogScreens.xml#configproductdetail"/>
@@ -275,7 +272,7 @@ under the License.
                                 <not><if-empty field="product"/></not>
                             </condition>
                             <widgets>
-                                <include-screen name="${detailScreen}"/>
+                                <include-screen name="custome-productdetail"/>
                             </widgets>
                             <fail-widgets>
                                 <label style="head2">${uiLabelMap.ProductProductNotFound} ${productId}!</label>
@@ -302,6 +299,21 @@ under the License.
         </section>
     </screen>
 
+    <screen name="custome-productdetail">
+        <section>
+            <actions>
+                <set field="productsummaryScreen" value="component://ecommerce/widget/CatalogScreens.xml#productsummary"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/ProductDetail.groovy"/>
+            </actions>
+            <widgets>
+                <include-screen name="breadcrumbs"/>
+                <platform-specific><html><html-template location="component://ecommerce/template/catalog/CustomeProductDetail.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
     <screen name="productdetail">
         <section>
             <actions>

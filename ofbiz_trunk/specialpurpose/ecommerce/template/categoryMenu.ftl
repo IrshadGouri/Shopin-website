@@ -1,3 +1,25 @@
+<script type="text/javascript" charset="utf-8">
+    function callDocument(id, parentCategoryStr) {
+        var checkUrl = '<@ofbizUrl>productCategoryList</@ofbizUrl>';
+        if (checkUrl.search("http"))
+            var ajaxUrl = '<@ofbizUrl>productCategoryList</@ofbizUrl>';
+        else
+            var ajaxUrl = '<@ofbizUrl>productCategoryListSecure</@ofbizUrl>';
+
+        //jQuerry Ajax Request
+        jQuery.ajax({
+            url: ajaxUrl,
+            type: 'POST',
+            data: {"category_id" : id, "parentCategoryStr" : parentCategoryStr},
+            error: function(msg) {
+                alert("An error occurred loading content! : " + msg);
+            },
+            success: function(msg) {
+                jQuery('#div3').html(msg);
+            }
+        });
+    }
+</script>
     <#if (requestAttributes.topLevelList)??>
         <#assign topLevelList = requestAttributes.topLevelList>
     </#if>
@@ -11,7 +33,7 @@
     	    <#list rootCat?sort_by("productCategoryId") as root>
     	        <#if root.categoryName??>
 			        <li class="dropdown mega-dropdown active">
-			        <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="callDocument('${root.productCategoryId}', '${root.parentCategoryId}')">${root.categoryName?if_exists}<span class="caret"></span></a>
+			        <a class="color2" href="<@ofbizUrl>productCategoryDetails?category_id=${root.productCategoryId}&parentCategoryStr=${root.parentCategoryId}</@ofbizUrl>" class="dropdown-toggle" data-toggle="dropdown">${root.categoryName?if_exists}<span class="caret"></span></a>
 			        <#if root.child?has_content>
 				        <div class="dropdown-menu mega-dropdown-menu">
                             <div class="menu-top">
@@ -19,7 +41,7 @@
 							        <div class="h_nav">
 									    <ul>
 									        <#list root.child as cRoot>
-										       <li><a href="product.html">${cRoot.categoryName?if_exists}</a></li>
+										       <li><a href="<@ofbizUrl>productCategoryDetails?category_id=${root.productCategoryId}&parentCategoryStr=${root.parentCategoryId}</@ofbizUrl>">${cRoot.categoryName?if_exists}</a></li>
 								             </#list>
 										
 									    </ul>	
