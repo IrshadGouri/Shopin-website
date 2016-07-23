@@ -92,7 +92,7 @@ under the License.
                         <container id="div1" style="left"><include-screen name="${leftbarScreenName}" location="${leftbarScreenLocation}"/></container>
                         <container id="div2" style="right"><include-screen name="${rightbarScreenName}" location="${rightbarScreenLocation}"/></container>
 
-                        <container id="div3" style="${MainColumnStyle}">
+                        <container id="div30" style="${MainColumnStyle}">
                            <!-- render messages -->
                            <platform-specific><html><html-template location="component://common/template/includes/Messages.ftl"/></html></platform-specific>
                            <decorator-section-include name="body"/>
@@ -350,6 +350,31 @@ under the License.
                     <decorator-section name="body">
                         <platform-specific>
                             <html><html-template location="component://ecommerce/template/Main.ftl"/></html>
+                        </platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="productCategoryDetails">
+        <section>
+            <actions>
+                <set field="titleProperty" value="PageTitleMain"/>
+                <set field="headerItem" value="main"/>
+                <set field="randomSurveyGroup" value="testSurveyGroup"/>
+
+                <script location="component://ecommerce/groovyScripts/Main.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/BestSellingCategory.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/CategoryDetail.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/ProductSummary.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific>
+                            <html><html-template location="component://ecommerce/template/productCategoryDetails.ftl"/></html>
                         </platform-specific>
                     </decorator-section>
                 </decorator-screen>

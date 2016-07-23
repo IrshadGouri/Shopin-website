@@ -139,6 +139,19 @@ under the License.
             </widgets>
         </section>
     </screen>
+    <screen name="custome-productsummary">
+        <section>
+            <actions>
+                <property-map resource="ProductUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="EcommerceUiLabels" map-name="uiLabelMap" global="true"/>
+                <script location="component://order/groovyScripts/entry/catalog/ProductSummary.groovy"/>
+            </actions>
+            <widgets>
+                <platform-specific><html><html-template location="component://order/template/entry/catalog/CustomeProductSummary.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
 
     <screen name="breadcrumbs">
         <section>
@@ -281,21 +294,6 @@ under the License.
                 <set field="MainColumnStyle" value="center"/>
                 <set field="titleProperty" value="PageTitleProductPage"/>
                 <set field="randomSurveyGroup" value="testSurveyGroup"/>
-                <set field="layoutSettings.styleSheets[]" value="/images/bootstrap.css" global="true" /> 
-                <set field="layoutSettings.styleSheets[]" value="/chocolat1.css" global="true" /> 
-                <set field="layoutSettings.styleSheets[]" value="/ecommerce/css/jstarbox.css" global="true" />
-                <set field="layoutSettings.styleSheets[]" value="/ecommerce/css/popuo-box.css" global="true" />
-                <set field="layoutSettings.styleSheets[6]" value="/ecommerce/css/style.css" global="true" />
-                <set field="layoutSettings.styleSheets[7]" value="/ecommerce/css/style4.css" global="true" /> 
-				<set field="layoutSettings.javaScripts[0]" value="/ecommerce/js/bootstrap.min.js" global="true"/>
-                <set field="layoutSettings.javaScripts[2]" value="/ecommerce/js/imagezoom.js" global="true"/>
-                <set field="layoutSettings.javaScripts[3]" value="/ecommerce/js/jquery.chocolat.js" global="true"/>
-                <set field="layoutSettings.javaScripts[4]" value="/ecommerce/js/jquery.flexslider.js" global="true"/>
-                <set field="layoutSettings.javaScripts[5]" value="/ecommerce/js/jquery.magnific-popup.js" global="true"/>
-                <set field="layoutSettings.javaScripts[6]" value="/ecommerce/js/jquery.min.js" global="true"/>
-                <set field="layoutSettings.javaScripts[7]" value="/ecommerce/js/jstarbox.js" global="true"/>
-                <set field="layoutSettings.javaScripts[9]" value="/ecommerce/js/simpleCart.min.js" global="true"/>
-                <set field="layoutSettings.javaScripts[10]" value="/ecommerce/js/uisearch.js" global="true"/>
                 <script location="component://order/groovyScripts/entry/catalog/Product.groovy"/>
             </actions>
             <widgets>
