@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Shopin A Ecommerce Category Flat Bootstrap Responsive Website Template | Contact :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />    
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />    
 <style>
 .title {
     border-bottom: 1px solid #252525;
@@ -58,6 +58,9 @@ table th{
     width: 65px;
     font-size: 14px;
     text-align: center;
+}
+form div, .buttons {
+    clear: none;
 }
 </style>
 <!--//theme-style-->
