@@ -1952,7 +1952,8 @@ under the License.
     <view-map name="requestreturn" type="screen" page="component://ecommerce/widget/OrderScreens.xml#requestreturn"/>
 
     <!-- Anonymous Checkout 3 steps entry-->
-    <view-map name="quickAnonCustSetting" type="screen" page="component://ecommerce/widget/OrderScreens.xml#quickAnonCustSettings"/>
+    <!-- view-map name="quickAnonCustSetting" type="screen" page="component://ecommerce/widget/OrderScreens.xml#quickAnonCustSettings"/ -->
+    <view-map name="quickAnonCustSetting" type="screen" page="component://ecommerce/widget/OrderScreens.xml#customeQuickAnonCustSettings"/>
     <view-map name="quickAnonOptionSetting" type="screen" page="component://ecommerce/widget/OrderScreens.xml#quickAnonOptionSettings"/>
     <view-map name="quickAnonOrderReview" type="screen" page="component://ecommerce/widget/OrderScreens.xml#quickAnonOrderReview"/>
     <view-map name="quickAnonOrderItems" type="screen" page="component://ecommerce/widget/OrderScreens.xml#quickAnonOrderItems"/>

@@ -456,6 +456,28 @@ under the License.
             </widgets>
         </section>
     </screen>
+    <screen name="customeQuickAnonCustSettings">
+        <section>
+            <actions>
+                <set field="parameters.formNameValue" value="quickAnonCustSetupForm" global="true"/>
+
+                <set field="titleProperty" value="PageTitleShippingInformation"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+                <set field="layoutSettings.javaScripts[+0]" value="/ecommerce/images/quickAnonCustSettings.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/classiee.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/modernizr.custom.js" global="true"/>
+                <script location="component://ecommerce/groovyScripts/order/QuickAnonCustSettings.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="quickAnonCheckoutDecorator">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://ecommerce/template/order/CustomeQuickAnonCheckout.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
 
     <screen name="quickAnonOptionSettings">
         <section>

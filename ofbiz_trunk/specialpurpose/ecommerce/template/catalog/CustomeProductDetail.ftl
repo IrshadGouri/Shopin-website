@@ -120,7 +120,7 @@
         
             <div class="head-top">
             
-         <div class="col-sm-8 col-md-offset-2 h_menu4">
+         <div class="col-sm-10 h_menu4">
                 <nav class="navbar nav_bottom" role="navigation">
  
  <!-- Brand and toggle get grouped for better mobile display -->
@@ -542,14 +542,7 @@
 <div class="tab-pane active text-style" id="tab1">
  <div class="facts">
                                       <p>${productContentWrapper.get("LONG_DESCRIPTION", "html")!}</p>
-                                        <ul>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Research</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Design and Development</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Porting and Optimization</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>System integration</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Verification, Validation and Testing</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Maintenance and Support</li>
-                                        </ul>         
+      
                                     </div>
 
 </div>
@@ -595,15 +588,8 @@
             </div>
         </div>
       </#if> </p>
-                                        <ul>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Research</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Design and Development</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Porting and Optimization</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>System integration</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Verification, Validation and Testing</li>
-                                            <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Maintenance and Support</li>
-                                        </ul>     
-                                 </div> 
+ 
+     </div> 
 
  </div>
   
@@ -642,14 +628,13 @@
         </div>
     <!--//content-->
         <!--//footer-->
-    <div class="footer">
-    <div class="footer-middle">
-                <div class="container">
-                    <div class="col-md-3 footer-middle-in">
-                        <a href="index.html"><img src="images/log.png" alt=""></a>
-                        <p>Suspendisse sed accumsan risus. Curabitur rhoncus, elit vel tincidunt elementum, nunc urna tristique nisi, in interdum libero magna tristique ante. adipiscing varius. Vestibulum dolor lorem.</p>
-                    </div>
-                    
+        <div class="footer">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="col-md-3 footer-middle-in">
+                    <a href="index.html"><img src="images/log.png" alt=""></a>
+                    <p>Suspendisse sed accumsan risus. Curabitur rhoncus, elit vel tincidunt elementum, nunc urna tristique nisi, in interdum libero magna tristique ante. adipiscing varius. Vestibulum dolor lorem.</p>
+                 </div>
                     <div class="col-md-3 footer-middle-in">
                         <h6>Information</h6>
                         <ul class=" in">
