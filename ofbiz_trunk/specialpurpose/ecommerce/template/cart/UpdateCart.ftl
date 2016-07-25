@@ -18,10 +18,12 @@ under the License.
 -->
 
 <#if shoppingCart?has_content && shoppingCart.size() &gt; 0>
-  <h3>${uiLabelMap.EcommerceStep} 1: ${uiLabelMap.PageTitleShoppingCart}</h3>
+  <div class="panel-heading">
+    <h3>${uiLabelMap.EcommerceStep} 1: ${uiLabelMap.PageTitleShoppingCart}</h3>
+  </div>
   <div id="cartSummaryPanel" style="display: none;">
     <a href="javascript:void(0);" id="openCartPanel" class="button">${uiLabelMap.EcommerceClickHereToEdit}</a>
-    <table id="cartSummaryPanel_cartItems" summary="This table displays the list of item added into Shopping Cart.">
+    <table class="table" id="cartSummaryPanel_cartItems" summary="This table displays the list of item added into Shopping Cart.">
       <thead>
         <tr>
           <th id="orderItem">${uiLabelMap.OrderItem}</th>
@@ -170,14 +172,18 @@ under the License.
         </table>
       </fieldset>
       <fieldset id="productPromoCodeFields">
-        <div>
-          <label for="productPromoCode">${uiLabelMap.EcommerceEnterPromoCode}</label>
-          <input id="productPromoCode" name="productPromoCode" type="text" value="" />
+        <div class="row" style="padding: 0 10px">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
+            <div class="form-group">
+              <label for="productPromoCode">${uiLabelMap.EcommerceEnterPromoCode}</label>
+              <input id="productPromoCode" class="form-control" name="productPromoCode" type="text" value="" />
+            </div>
+          </div>
         </div>
       </fieldset>
       <fieldset>
-        <a href="javascript:void(0);" class="button" id="updateShoppingCart" >${uiLabelMap.EcommerceContinueToStep} 2</a>
-        <a style="display: none" class="button" href="javascript:void(0);" id="processingShipping">${uiLabelMap.EcommercePleaseWait}....</a>
+        <a href="javascript:void(0);" style="margin: 10px 10px" class="btn btn-success" id="updateShoppingCart" >${uiLabelMap.EcommerceContinueToStep} 2</a>
+        <a style="display: none" style="margin: 10px 10px" class="btn btn-success" href="javascript:void(0);" id="processingShipping">${uiLabelMap.EcommercePleaseWait}....</a>
       </fieldset>
     </form>
   </div>
