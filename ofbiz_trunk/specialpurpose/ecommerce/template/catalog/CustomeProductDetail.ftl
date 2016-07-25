@@ -120,7 +120,7 @@
         
             <div class="head-top">
             
-         <div class="col-sm-10 h_menu4">
+         <div class="col-sm-10">
                 <nav class="navbar nav_bottom" role="navigation">
  
  <!-- Brand and toggle get grouped for better mobile display -->
@@ -139,24 +139,10 @@
      </div><!-- /.navbar-collapse -->
 
 </nav>
-            </div>
-            <div class="col-sm-2 search-right">
-                <ul class="heart">
-                <li>
-                <a href="wishlist.html" >
-                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                </a></li>
-                <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i></a></li>
-                    </ul>
-                    <div class="cart box_1">
-                        <a href="checkout.html">
-                        <h3> <div class="total">
-                            <span class="simpleCart_total"></span></div>
-                            <img src="images/cart.png" alt=""/></h3>
-                        </a>
-                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-
-                    </div>
+</div>
+<div class="col-sm-2 search-right">
+  <#include "component://ecommerce/template/cart/CustomeMicroCart.ftl"/>
+</div>
                     <div class="clearfix"> </div>
                     
                         <!----->
@@ -366,19 +352,12 @@
                         <li class="compare"><a href="#"><span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span>Add to Compare</a></li>
                     </ul>
                  </div>
-                 <div class="quantity"> 
-                     <div class="quantity-select">                           
-                     <div class="entry value-minus">&nbsp;</div>
-                     <div class="entry value"><span>1</span></div>
-                     <div class="entry value-plus active">&nbsp;</div>
-                 </div>
           <form method="post" action="<@ofbizUrl>additem</@ofbizUrl>" name="addform"  style="margin: 0;">
           <fieldset>
             <#assign inStock = true />
             <#assign commentEnable = Static["org.ofbiz.entity.util.EntityUtilProperties"].getPropertyValue("order", "order.item.comment.enable", delegator)>
             <#if commentEnable.equals("Y")>
                 <#assign orderItemAttr = Static["org.ofbiz.entity.util.EntityUtilProperties"].getPropertyValue("order", "order.item.attr.prefix", delegator)>
-                ${uiLabelMap.CommonComment}&nbsp;<input type="text" name="${orderItemAttr}comment"/>
             </#if>
             <#-- Variant Selection -->
             <#if product.isVirtual!?upper_case == "Y">
@@ -397,8 +376,8 @@
                 </#list>
                   <input type="hidden" name="add_product_id" value="${product.productId}" />
                 <div id="addCart1" style="display:none;">
-                  <span style="white-space: nowrap;"><strong>${uiLabelMap.CommonQuantity}:</strong></span>&nbsp;
-                  <input type="text" size="5" name="quantity" value="1" />
+                  <span style="white-space: nowrap;"><strong>${uiLabelMap.CommonQuantity}:=</strong></span>&nbsp;
+                  <input type="text" class="value" size="5" name="quantity" value="1" />
                   <a href="javascript:javascript:addItem();" class="buttontext"><span style="white-space: nowrap;">${uiLabelMap.OrderAddToCart}</span></a>
                   &nbsp;
                 </div>
@@ -514,6 +493,8 @@
     <script>
     $('.value-plus').on('click', function(){
         var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+        console.log("========divUpd====="+newVal)
+        $('#quantity').val(newVal)
         divUpd.text(newVal);
     });
 

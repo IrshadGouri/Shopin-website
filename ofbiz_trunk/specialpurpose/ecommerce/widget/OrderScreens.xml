@@ -459,15 +459,14 @@ under the License.
     <screen name="customeQuickAnonCustSettings">
         <section>
             <actions>
-                <set field="parameters.formNameValue" value="quickAnonCustSetupForm" global="true"/>
-
-                <set field="titleProperty" value="PageTitleShippingInformation"/>
-                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
-                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
-                <set field="layoutSettings.javaScripts[+0]" value="/ecommerce/images/quickAnonCustSettings.js" global="true"/>
-                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/classiee.js" global="true"/>
-                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/modernizr.custom.js" global="true"/>
-                <script location="component://ecommerce/groovyScripts/order/QuickAnonCustSettings.groovy"/>
+                <set field="titleProperty" value="EcommerceOnePageCheckout"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/images/checkoutProcess.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ordermgr-js/geoAutoCompleter.js" global="true"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditShippingAddress.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditBillingAddress.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditEmailAndTelecomNumber.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/OnePageCheckoutOptions.groovy"/>
+                <script location="component://ecommerce/groovyScripts/cart/ShowCart.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="quickAnonCheckoutDecorator">
@@ -619,6 +618,27 @@ under the License.
                 <script location="component://ecommerce/groovyScripts/customer/EditBillingAddress.groovy"/>
                 <script location="component://ecommerce/groovyScripts/customer/EditEmailAndTelecomNumber.groovy"/>
                 <script location="component://ecommerce/groovyScripts/customer/OnePageCheckoutOptions.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://ecommerce/template/order/OnePageCheckoutProcess.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="CustomeOnePageCheckout">
+        <section>
+            <actions>
+                <set field="titleProperty" value="EcommerceOnePageCheckout"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/images/checkoutProcess.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ordermgr-js/geoAutoCompleter.js" global="true"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditShippingAddress.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditBillingAddress.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/EditEmailAndTelecomNumber.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/OnePageCheckoutOptions.groovy"/>
+                <script location="component://ecommerce/groovyScripts/cart/ShowCart.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">

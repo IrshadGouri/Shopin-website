@@ -18,6 +18,9 @@
 <script src="js/jquery.min.js"></script>
 <!--- start-rate---->
 <script src="js/jstarbox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
 	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript">
 			jQuery(function() {
@@ -606,8 +609,128 @@
     });
 	</script>
 	<!--quantity-->
-				 
-			    <a href="#" class="add-to item_add hvr-skew-backward">Add to cart</a>
+							
+				
+				
+				 <div class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2" style="overflow-y: scroll;overflow-x: inherit;">
+			<div class="row">
+				<div class="col-md-12">
+		<a  class="glyphicon glyphicon-remove btn btn-dange" id="showRightt" style="float:right;"></a>				
+					</div>
+				</div>
+			<hr style="margin-top: 0px;">
+			
+			<div class="row">
+				<div class="col-md-12">			
+					
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    
+    <div class="col-sm-12" style="margin-left: 7px;">
+    <label>Shopping Cart (2)</label>   
+    </div>
+  </div>
+  <div class="form-group row">
+	  <div class="col-md-12" style="margin-left: 7px;">
+		  <button class="btn btn-warning">PayPal</button>
+		  <button class="btn btn-danger">CheckOut</button>
+		  </div>
+	  </div>
+	
+	<div class="form-group">
+    
+    <div class="col-sm-12" style="margin-left: 7px;">
+    <label>1 Item I Your Cart</label>   
+    </div>
+  </div>
+</form>
+			
+				</div>
+				</div>
+			<hr style="margin-top: 0px;">
+			
+			<div class="row">
+				<div class="col-md-6">
+							<img src="images/si1.jpg" class="img-responsive" alt="">
+						</div>
+						
+						<div class="col-md-6">
+				<p>product name</p>			
+						</div>
+				</div>
+				
+				<div class="row" >
+					<div class="col-md-3">
+						
+							<div class="col-md-12 col-xs-6" style="padding-bottom:5px;border-bottom:1px solid #ddd;">
+									<label>Price</label>
+								</div>
+						
+						
+							<div class="col-md-12 col-xs-6" >
+								<div class="price_single">
+				  					<span class="reducedfrom item_price" style="color:black;font-size: medium;">$140.00</span>
+								</div>
+							</div>
+						
+					</div>
+					
+					
+					<div class="col-md-5" style="padding-left:7px;padding-right: 4px;">
+							<div class="col-md-12 col-xs-6" style="padding-bottom:5px;border-bottom:1px solid #ddd;">
+								<label>Qty</label>
+							</div>
+						
+								
+						<div class="col-md-12 col-xs-6" style="margin-top: -20px; padding-left: 0px; padding-right: 0px;left:10px;">						
+								<div class="quantity"> 
+									<div class="quantity-select">                           
+										<div class="entry value-minuss  glyphicon glyphicon-minus">&nbsp;</div>
+										<div class="entry value" style="line-height:1px;height:0px!important"><span>1</span></div>
+										<div class="entry value-pluss active glyphicon glyphicon-plus">&nbsp;</div>
+									</div>
+								</div>
+	<script>
+    $('.value-pluss').on('click', function(){
+    	var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+    	divUpd.text(newVal);
+    });
+
+    $('.value-minuss').on('click', function(){
+    	var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+    	if(newVal>=1) divUpd.text(newVal);
+    });
+	</script>
+						
+							</div>
+						</div>
+					
+					
+					<div class="col-md-4">
+								<div class="col-md-12 col-xs-6" style="padding-bottom:5px;border-bottom:1px solid #ddd;">
+									<label>Total</label>
+								</div>
+						
+						
+						<div class="col-md-12 col-xs-6">
+									<div class="price_single">
+				  						<span class="reducedfrom item_price" style="color:black;font-size: medium;">$140.00</span>
+									</div>
+							</div>
+						</div>					
+					</div>
+			
+				
+
+
+			
+				
+		</nav>
+		</div>
+		
+				<!--<button id="showRight"> aa</button> -->
+			    <a href="#" class="add-to item_add hvr-skew-backward" id="showRight">Add to cart</a>						
 			<div class="clearfix"> </div>
 			</div>
 		
@@ -779,6 +902,36 @@ $(window).load(function() {
 <!-- slide -->
 <script src="js/bootstrap.min.js"></script>
 
+<script src="js/classiee.js"></script>
+		<script>
+			var 
+				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				
+				body = document.body;
+
+			
+			showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+			};
+			
+			showRightt.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOtherr( 'showRightt' );
+			};
+			
+			function disableOther( a ) {
+				
+				if( button == 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+				
+					
+				
+			}
+		</script>
 
 </body>
 </html>

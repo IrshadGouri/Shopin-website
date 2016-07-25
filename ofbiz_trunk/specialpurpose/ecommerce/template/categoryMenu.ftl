@@ -24,7 +24,7 @@
         <#assign topLevelList = requestAttributes.topLevelList>
     </#if>
         <ul class="nav navbar-nav nav_1">
-            <li><a class="color3" href="product.html">Home</a></li>
+            <li><a class="color3" href="<@ofbizUrl>main</@ofbizUrl>">Home</a></li>
             <#if (topLevelList?has_content)>
     	         <@fillTree rootCat=completedTree/>
   	         </#if>
