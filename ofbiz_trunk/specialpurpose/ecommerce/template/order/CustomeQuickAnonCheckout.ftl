@@ -438,9 +438,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h4 class="title"><span class="badge">2</span> Shipping Method</h4>
                 <div class="form-group">
                   <label for="shipping-option">Select a shipping option</label>
-                  <select class="form-control validate-required" id="shipping-option" name="shipMethod" data-param-source=".shipping-method-section" data-ajax-update=".shipping-method-section, .order-summary, #cart-overview" data-update-url="setShippingOptionInCheckoutShoppingCart">
+                  <select class="form-control validate-required" id="" name="shipMethod" data-param-source=".shipping-method-section" data-ajax-update=".shipping-method-section, .order-summary, #cart-overview" data-update-url="setShippingOptionInCheckoutShoppingCart">
                     <option value="">--Select--</option>
-                  </select>
+                  </select>                      
+                  <select id="shipMethod" name="shipMethod" class="required">
+                          <option value=""></option>
+                   </select>
+                  
                 </div></div>
                           <div class="payment-method-section">
                             <h4 class="title"><span class="badge">3</span> Payment Method</h4>

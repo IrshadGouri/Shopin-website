@@ -520,8 +520,8 @@ tfoot th, tfoot td {
           <div id="orderSubmitPanel" style="display: none;">
             <form id="orderSubmitForm" action="<@ofbizUrl>onePageProcessOrder</@ofbizUrl>" method="post">
                 <fieldset>
-                    <input type="button" id="processOrderButton" name="processOrderButton" value="${uiLabelMap.OrderSubmitOrder}" />
-                    <input type="button" style="display: none;" id="processingOrderButton" name="processingOrderButton" value="${uiLabelMap.OrderSubmittingOrder}" />
+                    <input type="button" id="processOrderButton" class="btn btn-success" name="processOrderButton" value="${uiLabelMap.OrderSubmitOrder}" />
+                    <input type="button" style="display: none;" class="btn btn-success" id="processingOrderButton" name="processingOrderButton" value="${uiLabelMap.OrderSubmittingOrder}" />
                 </fieldset>
             </form>
           </div>

@@ -36,7 +36,7 @@
 			        <a class="color2" href="<@ofbizUrl>productCategoryDetails?category_id=${root.productCategoryId}&parentCategoryStr=${root.parentCategoryId}</@ofbizUrl>" class="dropdown-toggle" data-toggle="dropdown">${root.categoryName?if_exists}<span class="caret"></span></a>
 			        <#if root.child?has_content>
 				        <div class="dropdown-menu mega-dropdown-menu">
-                            <div class="menu-top">
+                            <div class="menu-top" style="width:0px">
 						        <div class="col1">
 							        <div class="h_nav">
 									    <ul>

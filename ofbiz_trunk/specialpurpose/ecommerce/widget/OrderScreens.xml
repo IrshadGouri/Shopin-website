@@ -49,6 +49,13 @@ under the License.
             </widgets>
         </section>
     </screen>
+    <!--  >screen name="orderheader">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://ecommerce/template/order/CustomeOrderHeader.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen -->
 
     <screen name="orderitems">
         <section>
@@ -467,6 +474,8 @@ under the License.
                 <script location="component://ecommerce/groovyScripts/customer/EditEmailAndTelecomNumber.groovy"/>
                 <script location="component://ecommerce/groovyScripts/customer/OnePageCheckoutOptions.groovy"/>
                 <script location="component://ecommerce/groovyScripts/cart/ShowCart.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="quickAnonCheckoutDecorator">
