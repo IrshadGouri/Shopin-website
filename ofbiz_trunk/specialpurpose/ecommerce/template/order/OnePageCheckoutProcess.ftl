@@ -506,7 +506,6 @@ tfoot th, tfoot td {
                     <br style="clear:both;"/>
                     <fieldset>
                       <a href="javascript:void(0);" style="margin: 10px 10px" class="btn btn-success" id="savePaymentAndBillingContact">${uiLabelMap.EcommerceContinueToStep} 5</a>
-                      <a href="javascript:void(0);" style="margin: 10px 10px" class="btn btn-success" style="display: none;" id="processingOrderSubmitPanel">${uiLabelMap.EcommercePleaseWait}....</a>
                     </fieldset>
             </form>
           </div>
@@ -520,7 +519,8 @@ tfoot th, tfoot td {
           <div id="orderSubmitPanel" style="display: none;">
             <form id="orderSubmitForm" action="<@ofbizUrl>onePageProcessOrder</@ofbizUrl>" method="post">
                 <fieldset>
-                    <input type="button" id="processOrderButton" class="btn btn-success" name="processOrderButton" value="${uiLabelMap.OrderSubmitOrder}" />
+                    <a href="javascript:void(0);" style="margin: 10px 10px" class="btn btn-success" id="processOrderButton">${uiLabelMap.OrderSubmitOrder}</a>
+                    <!-- input type="button" id="processOrderButton" class="btn btn-success" name="processOrderButton" value="${uiLabelMap.OrderSubmitOrder}" / -->
                     <input type="button" style="display: none;" class="btn btn-success" id="processingOrderButton" name="processingOrderButton" value="${uiLabelMap.OrderSubmittingOrder}" />
                 </fieldset>
             </form>

@@ -308,7 +308,6 @@ under the License.
                 <script location="component://order/groovyScripts/entry/catalog/ProductDetail.groovy"/>
             </actions>
             <widgets>
-                <include-screen name="breadcrumbs"/>
                 <platform-specific><html><html-template location="component://ecommerce/template/catalog/CustomeProductDetail.ftl"/></html></platform-specific>
             </widgets>
         </section>
