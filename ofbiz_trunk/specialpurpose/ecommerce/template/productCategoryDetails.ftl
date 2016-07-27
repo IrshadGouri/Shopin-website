@@ -47,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!--header-->
   <div class="header">
-    <div class="container">
+    <!--<div class="container">
       <div class="head">
         <div class=" logo">
           <a href="index.html"><img src="images/logo1.jpg" alt=""></a>    
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="clearfix"> </div>
       </div>
-    </div>
+    </div>-->
     <div class="container">
       <div class="head-top">
         <div class="col-sm-10">
