@@ -85,7 +85,7 @@
 <body>
 <!--header-->
 <div class="header">
-<div class="container">
+<!--<div class="container">
         <div class="head">
             <div class=" logo">
                 <a href="index.html"><img src="images/logo1.jpg" alt=""></a>    
@@ -114,7 +114,7 @@
             </div>
                 <div class="clearfix"> </div>
         </div>
-        </div>
+        </div> -->
         
         <div class="container">
         
@@ -182,14 +182,14 @@
         </div>  
     </div>  
 </div>
-<!--banner-->
+<!--banner
 <div class="banner-top">
     <div class="container">
         <h1>Single</h1>
         <em></em>
         <h2><a href="index.html">Home</a><label>/</label>Single</a></h2>
     </div>
-</div>
+</div>-->
 <div class="single">
 
 <div class="container">

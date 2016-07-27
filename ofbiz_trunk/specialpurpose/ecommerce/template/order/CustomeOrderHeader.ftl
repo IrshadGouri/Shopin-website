@@ -158,14 +158,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>  
     </div>  
 </div>
-<!--banner-->
+<!--banner
 <div class="banner-top">
     <div class="container">
         <h1>Order Confirmation</h1>
         <em></em>
         <h2><a href="index.html">Home</a><label>/</label>Order Confirmation</a></h2>
     </div>
-</div>
+</div>-->
 <#if baseEcommerceSecureUrl??><#assign urlPrefix = baseEcommerceSecureUrl/></#if>
 <#if (orderHeader.externalId)?? && (orderHeader.externalId)?has_content >
   <#assign externalOrder = "(" + orderHeader.externalId + ")"/>

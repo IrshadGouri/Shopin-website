@@ -162,14 +162,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
 	</div>	
 </div>
-<!--banner-->
+<!--banner
 <div class="banner-top">
 	<div class="container">
 		<h1>Checkout</h1>
 		<em></em>
 		<h2><a href="index.html">Home</a><label>/</label>Checkout</a></h2>
 	</div>
-</div>
+</div>-->
 <!--login-->
 	<script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){

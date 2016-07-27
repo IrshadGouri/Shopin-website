@@ -134,14 +134,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>    
     </div>    
 </div>
-<!--banner-->
+<!--banner
 <div class="banner-top">
     <div class="container">
         <h1>Products</h1>
         <em></em>
         <h2><a href="index.html">Home</a><label>/</label>Products</a></h2>
     </div>
-</div>
+</div>-->
     <!--content-->
         <div class="product">
             <div class="container">

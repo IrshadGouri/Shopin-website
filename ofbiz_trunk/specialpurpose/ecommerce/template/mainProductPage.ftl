@@ -18,19 +18,18 @@
 	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
 	
 <!---//End-rate---->
-
 </head>
 <body>
 <!--header-->
 <div class="header">
-<div class="container">
+<!--<div class="container">
 		<div class="head">
 			<div class=" logo">
 				<a href="index.html"><img src="images/logo1.jpg" alt=""></a>	
 			</div>
 		</div>
-	</div>
-	<div class="header-top">
+	</div> -->
+	<!--<div class="header-top">
 		<div class="container">
 		<div class="col-sm-5 col-md-offset-2  header-login">
 					<ul >
@@ -52,13 +51,13 @@
 			</div>
 				<div class="clearfix"> </div>
 		</div>
-		</div>
+		</div> -->
 		
 		<div class="container">
 		
 			<div class="head-top">
 			
-		 <div class="col-sm-10">
+		 <div class="col-sm-9">
 				<nav class="navbar nav_bottom" role="navigation">
  
  <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,7 +77,7 @@
 
 </nav>
 </div>
-<div class="col-sm-2 search-right">
+<div class="col-sm-3 search-right">
   <#include "component://ecommerce/template/cart/CustomeMicroCart.ftl"/>
 </div>
 					<div class="clearfix"> </div>
