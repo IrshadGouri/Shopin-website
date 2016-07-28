@@ -76,6 +76,15 @@ jQuery(document).ready(function(){
         jQuery('#processingBilling').fadeOut('fast');
         jQuery('#saveShippingMethod').fadeIn('fast');
     });
+    jQuery('#shipMethod').change(function() {
+        jQuery('#shipMethod').fadeOut('fast');
+        jQuery('#processingBilling').fadeIn('fast');
+        if (setShippingOption()){
+            showEditBillingPanel();
+        }
+        jQuery('#processingBilling').fadeOut('fast');
+        jQuery('#shipMethod').fadeIn('fast');
+    });
 
     jQuery('#openShippingOptionPanel').click(function() {
         showEditShippingOptionPanel();
