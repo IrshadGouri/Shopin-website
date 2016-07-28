@@ -7,21 +7,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Order Confirmation</title>
+<title>Shopin A Ecommerce Category Flat Bootstrap Responsive Website Template | Login :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
-<style>
-.panel-default > .panel-heading {
-    color: #fff;
-    background-color: #1F1F1F;
-    border-color: #1F1F1F;
-}
-.link-color {
-color: #E4E80E!important;
-}
-</style>
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -68,35 +58,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <div class="header-top">
-        <div class="container">
-        <div class="col-sm-5 col-md-offset-2  header-login">
-                    <ul >
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                    </ul>
-                </div>
-                
-            <div class="col-sm-5 header-social">        
-                    <ul >
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i class="ic1"></i></a></li>
-                        <li><a href="#"><i class="ic2"></i></a></li>
-                        <li><a href="#"><i class="ic3"></i></a></li>
-                        <li><a href="#"><i class="ic4"></i></a></li>
-                    </ul>
-                    
-            </div>
-                <div class="clearfix"> </div>
-        </div>
-        </div>
         
         <div class="container">
         
             <div class="head-top">
             
-         <div class="col-sm-8 col-md-offset-2">
+         <div class="col-sm-9">
                 <nav class="navbar nav_bottom" role="navigation">
  
  <!-- Brand and toggle get grouped for better mobile display -->
@@ -107,22 +74,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     
    </div> 
    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-        <#include "component://ecommerce/template/categoryMenu.ftl"/>
-    </div><!-- /.navbar-collapse -->
+  <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+     <#include "component://ecommerce/template/categoryMenu.ftl"/>
+   </div><!-- /.navbar-collapse -->
 
 </nav>
-            </div>
+</div>
             <div class="col-sm-2 search-right">
-              <#include "component://ecommerce/template/cart/CustomeMicroCart.ftl"/>
+                <#include "component://ecommerce/template/cart/CustomeMicroCart.ftl"/>
             </div>
-            <div class="clearfix"> </div>
-                    
                         <!----->
-
                         <!---pop-up-box---->                      
             <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
             <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
@@ -158,148 +121,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>  
     </div>  
 </div>
-<!--banner
-<div class="banner-top">
-    <div class="container">
-        <h1>Order Confirmation</h1>
-        <em></em>
-        <h2><a href="index.html">Home</a><label>/</label>Order Confirmation</a></h2>
-    </div>
-</div>-->
-<#if baseEcommerceSecureUrl??><#assign urlPrefix = baseEcommerceSecureUrl/></#if>
-<#if (orderHeader.externalId)?? && (orderHeader.externalId)?has_content >
-  <#assign externalOrder = "(" + orderHeader.externalId + ")"/>
-</#if>
+<!--banner-->
+
 <!--login-->
-    <div class="container" style="margin-top:10px;">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-              <#if orderHeader?has_content>
-                <h3 class="panel-title">Order Nbr<a class="link-color" href="<@ofbizUrl fullPath="true">orderstatus?orderId=${orderHeader.orderId}</@ofbizUrl>">${orderHeader.orderId}</a> Information <a href="<@ofbizUrl fullPath="true">order.pdf?orderId=${(orderHeader.orderId)!}</@ofbizUrl>" target="_BLANK" class="link-color">[PDF]</a></h3>
-              </#if>
-              </div>
-              <div class="panel-body">
-                content
-              </div>
+<div class="container">
+        <div class="login">
+        
+            <form method="post" action="<@ofbizUrl>login</@ofbizUrl>" name="loginform">
+            <div class="col-md-6 login-do">
+                <div class="login-mail">
+                    <input type="text" id="userName" name="USERNAME" value="<#if requestParameters.USERNAME?has_content>${requestParameters.USERNAME}<#elseif autoUserLogin?has_content>${autoUserLogin.userLoginId}</#if>"/>
+                    <i  class="glyphicon glyphicon-envelope"></i>
+                </div>
+                <div class="login-mail">
+                    <input type="password" id="password" placeholder="Password" name="PASSWORD" value=""/>
+                    <i class="glyphicon glyphicon-lock"></i>
+                </div>
+                   <a class="news-letter " href="#">
+                         <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Forget Password</label>
+                       </a>
+                <label class="hvr-skew-backward">
+                    <input type="submit" value="${uiLabelMap.CommonLogin}"/>
+                </label>
             </div>
-          </div>
-      </div>
-    <#if localOrderReadHelper?? && orderHeader?has_content>
-      <#assign displayParty = localOrderReadHelper.getPlacingParty()!/>
-      <#if displayParty?has_content>
-        <#assign displayPartyNameResult = dispatcher.runSync("getPartyNameForDate", Static["org.ofbiz.base.util.UtilMisc"].toMap("partyId", displayParty.partyId, "compareDate", orderHeader.orderDate, "userLogin", userLogin))/>
-      </#if>
-      <li>
-        ${uiLabelMap.PartyName}
-        ${(displayPartyNameResult.fullName)?default("[Name Not Found]")}
-      </li>
-    </#if>
-      <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Order Items</h3>
-              </div>
-              <div class="panel-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Product</th>
-                      <th>Qty Ordered</th>
-                      <th>Unit Price</th>
-                      <th>Adjustment</th>
-                      <th>Subtotal</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <#list orderItems as orderItem>
-                      <#assign rentalQuantity = 1> <#-- no change if no rental item -->
-                      <#if orderItem.orderItemTypeId == "RENTAL_ORDER_ITEM" && workEfforts??>
-                        <#list workEfforts as workEffort>
-                          <#if workEffort.workEffortId == orderItem.orderItemSeqId>
-                            <#assign rentalQuantity = localOrderReadHelper.getWorkEffortRentalQuantity(workEffort)>
-                            <#assign workEffortSave = workEffort>
-                            <#break>
-                          </#if>
-                        </#list>
-                      <#else>
-                        <#assign WorkOrderItemFulfillments = orderItem.getRelated("WorkOrderItemFulfillment", null, null, false)!>
-                        <#if WorkOrderItemFulfillments?has_content>
-                          <#list WorkOrderItemFulfillments as WorkOrderItemFulfillment>
-                            <#assign workEffortSave = WorkOrderItemFulfillment.getRelatedOne("WorkEffort", true)!>
-                            <#break>
-                           </#list>
-                        </#if>
-                      </#if>
-                    <tr>
-                      <th scope="row">1</th>
-                      <#if !orderItem.productId?? || orderItem.productId == "_?_">
-                        <td>${orderItem.itemDescription?default("")}</td>
-                      <#else>
-                      <td>1</td>
-                      <td>$25.00</td>
-                      <td>$0.00</td>
-                      <td>$25.00</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Test Product</td>
-                      <td>1</td>
-                      <td>$25.00</td>
-                      <td>$0.00</td>
-                      <td>$25.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="row" style="border-top: 1px solid grey;">
-                  <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">SubTotal</span>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
-                  </div>
-                </div>
-                <div class="row" style="border-top: 1px solid grey;">
-                  <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">Promotion</span>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
-                  </div>
-                </div>
-                <div class="row" style="border-top: 1px solid grey;">
-                  <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">Shipping and Handling</span>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
-                  </div>
-                </div>
-                <div class="row" style="border-top: 1px solid grey;">
-                  <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">Sales Tax</span>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
-                  </div>
-                </div>
-                <div class="row" style="border-top: 2px solid grey;">
-                  <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">Grand Total</span>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-6 login-right">
+                 <h3>Completely Free Account</h3>
+                 
+                 <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
+                 libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
+                <a href="<@ofbizUrl>newcustomer</@ofbizUrl>" class=" hvr-skew-backward">Register</a>
+
             </div>
-          </div>
-      </div>
-    </div>
+            
+            <div class="clearfix"> </div>
+            </form>
+        </div>
+
+</div>
+
 <!--//login-->
+
+            <!--brand-->
+        <div class="container">
+            <div class="brand">
+                <div class="col-md-3 brand-grid">
+                    <img src="images/ic.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-3 brand-grid">
+                    <img src="images/ic1.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-3 brand-grid">
+                    <img src="images/ic2.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-3 brand-grid">
+                    <img src="images/ic3.png" class="img-responsive" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
             <!--//brand-->
             </div>
             
@@ -365,6 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <!--//footer-->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <script src="js/simpleCart.min.js"> </script>

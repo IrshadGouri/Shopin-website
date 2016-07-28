@@ -50,6 +50,13 @@ tfoot th, tfoot td {
     text-align: right;
 }
 </style>
+  <div class="col-sm-9">
+    <nav class="navbar nav_bottom" role="navigation">
+      <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">  
+        <#include "component://ecommerce/template/categoryMenu.ftl"/>
+      </div>
+    </nav>
+  </div>
 <div class="container">
   <#assign shoppingCart = sessionAttributes.shoppingCart! />
   <h2>${uiLabelMap.OrderCheckout}</h2>

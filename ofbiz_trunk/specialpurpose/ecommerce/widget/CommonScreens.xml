@@ -387,12 +387,14 @@ under the License.
                 <set field="titleProperty" value="PageTitleLogin"/>
                 <set field="headerItem" value="login"/>
                 <script location="component://ecommerce/groovyScripts/Login.groovy"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
             </actions>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <platform-specific>
-                            <html><html-template location="component://ecommerce/template/Login.ftl"/></html>
+                            <html><html-template location="component://ecommerce/template/CustomeLogin.ftl"/></html>
                         </platform-specific>
                         <!-- <include-screen name="ListThirdPartyLogins" location="component://passport/widget/PassportScreens.xml"/> -->
                         <platform-specific>
