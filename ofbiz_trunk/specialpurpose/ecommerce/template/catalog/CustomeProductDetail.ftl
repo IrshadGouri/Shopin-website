@@ -311,6 +311,7 @@
         </div>
 
 <div class="col-md-9">
+  <div class="row">
     <div class="col-md-5 grid">     
         <div class="flexslider">
               <ul class="slides">
@@ -503,15 +504,10 @@
         if(newVal>=1) divUpd.text(newVal);
     });
     </script>
-    <!--quantity-->
-                 
-            <div class="clearfix"> </div>
-            </div>
-        
-                    </div>
-            <div class="clearfix"> </div>
-            <!---->
-            <div class="tab-head">
+    
+    </div>
+    <div class="col-md-12">
+      <div class="tab-head">
              <nav class="nav-sidebar">
         <ul class="nav tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Product Description</a></li>
@@ -573,6 +569,15 @@
      </div> 
 
  </div>
+    </div>
+    <!--quantity-->
+                 
+            <div class="clearfix"> </div>
+            </div>
+        
+                    </div>
+            <div class="clearfix"> </div>
+            <!---->
   
   </div>
   <div class="clearfix"></div>
