@@ -56,7 +56,7 @@
 					<div class="col-md-4 item-grid1 simpleCart_shelfItem">
 					<div class=" mid-pop">
 					<div class="pro-img">
-						<img src="images/pc5.jpg" class="img-responsive" alt="">
+						<img src="images/pc5.jpg" class="product-category-image" alt="">
 
 						</div>
 						<div class="mid-1">
@@ -66,7 +66,7 @@
 							<h6><a href="${productUrl}" class="linktext">${productContentWrapper.get("PRODUCT_NAME", "html")!}</a></h6>
 							</div>
 							<div class="img item_add">
-								<a href="#"><img src="<@ofbizContentUrl>${contentPathPrefix!}${smallImageUrl}</@ofbizContentUrl>" alt=""></a>
+								<a href="#"><img src="<@ofbizContentUrl>${contentPathPrefix!}${smallImageUrl}</@ofbizContentUrl>" class="product-category-image" alt=""></a>
 							</div>
 							<div class="clearfix"></div>
 							</div>

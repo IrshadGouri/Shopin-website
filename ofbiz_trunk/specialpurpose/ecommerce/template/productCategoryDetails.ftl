@@ -16,6 +16,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--theme-style-->
 <link href="css/style4.css" rel="stylesheet" type="text/css" media="all" />    
 <!--//theme-style-->
+<style>
+@media screen and (min-width: 990px) {
+  .product-category-image{
+    height: 90px!important;
+    width: 90px!important;
+  }
+}
+</style>
 <script src="js/jquery.min.js"></script>
 <!--- start-rate---->
 <script src="js/jstarbox.js"></script>
@@ -323,7 +331,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div>
         <#if categoryImageUrl?string?has_content>
           <#assign height=100/>
-          <img src='<@ofbizContentUrl>${categoryImageUrl}</@ofbizContentUrl>' vspace='5' hspace='5' align='left' class='cssImgLarge' />
+          <img src='<@ofbizContentUrl>${categoryImageUrl}</@ofbizContentUrl>' vspace='5' hspace='5' align='left' class="product-category-image" />
         </#if>
         <#if longDescription?has_content>
           ${longDescription}
