@@ -68,30 +68,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <div class="header-top">
-        <div class="container">
-        <div class="col-sm-5 col-md-offset-2  header-login">
-                    <ul >
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                    </ul>
-                </div>
-                
-            <div class="col-sm-5 header-social">        
-                    <ul >
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i class="ic1"></i></a></li>
-                        <li><a href="#"><i class="ic2"></i></a></li>
-                        <li><a href="#"><i class="ic3"></i></a></li>
-                        <li><a href="#"><i class="ic4"></i></a></li>
-                    </ul>
-                    
-            </div>
-                <div class="clearfix"> </div>
-        </div>
-        </div>
-        
         <div class="container">
         
             <div class="head-top">
@@ -180,9 +156,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h3 class="panel-title">Order Nbr<a class="link-color" href="<@ofbizUrl fullPath="true">orderstatus?orderId=${orderHeader.orderId}</@ofbizUrl>">${orderHeader.orderId}</a> Information <a href="<@ofbizUrl fullPath="true">order.pdf?orderId=${(orderHeader.orderId)!}</@ofbizUrl>" target="_BLANK" class="link-color">[PDF]</a></h3>
               </#if>
               </div>
-              <div class="panel-body">
-                content
-              </div>
             </div>
           </div>
       </div>
@@ -191,10 +164,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <#if displayParty?has_content>
         <#assign displayPartyNameResult = dispatcher.runSync("getPartyNameForDate", Static["org.ofbiz.base.util.UtilMisc"].toMap("partyId", displayParty.partyId, "compareDate", orderHeader.orderDate, "userLogin", userLogin))/>
       </#if>
-      <li>
-        ${uiLabelMap.PartyName}
-        ${(displayPartyNameResult.fullName)?default("[Name Not Found]")}
-      </li>
     </#if>
       <div class="row">
           <div class="col-lg-12 col-md-12">
@@ -239,19 +208,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                       <#if !orderItem.productId?? || orderItem.productId == "_?_">
                         <td>${orderItem.itemDescription?default("")}</td>
                       <#else>
-                      <td>1</td>
-                      <td>$25.00</td>
-                      <td>$0.00</td>
-                      <td>$25.00</td>
+                        <#assign product = orderItem.getRelatedOne("Product", true)!/> <#-- should always exist because of FK constraint, but just in case -->
+                        <td>
+                          <a href="<@ofbizCatalogAltUrl fullPath="true" secure="false" productId=orderItem.productId/>" class="linktext">${orderItem.productId} - ${orderItem.itemDescription?default("")}</a>
+                        </td>
+                      </#if>
+                      <td>${orderItem.quantity?string.number}</td>
+                      <td><@ofbizCurrency amount=orderItem.unitPrice isoCode=currencyUomId/></td>
+                      <#assign itemAdjustments = localOrderReadHelper.getOrderItemAdjustments(orderItem)>
+                      <#assign totalAdjustment = 0.0/>
+                      <#list itemAdjustments as orderItemAdjustment>
+                        <#assign totalAdjustment = totalAdjustment + localOrderReadHelper.getOrderItemAdjustmentTotal(orderItem, orderItemAdjustment)/>
+                      </#list>
+                      <td><@ofbizCurrency amount=totalAdjustment isoCode=currencyUomId/></td>
+                      <td>            
+                        <#if workEfforts??>
+                          <@ofbizCurrency amount=localOrderReadHelper.getOrderItemTotal(orderItem)*rentalQuantity isoCode=currencyUomId/>
+                        <#else>
+                          <@ofbizCurrency amount=localOrderReadHelper.getOrderItemTotal(orderItem) isoCode=currencyUomId/>
+                        </#if>
+                      </td>
                     </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Test Product</td>
-                      <td>1</td>
-                      <td>$25.00</td>
-                      <td>$0.00</td>
-                      <td>$25.00</td>
-                    </tr>
+                   </#list>
                   </tbody>
                 </table>
                 <div class="row" style="border-top: 1px solid grey;">
@@ -259,23 +237,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="pull-right" style="padding: 5px;">SubTotal</span>
                   </div>
                   <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
+                    <span class="pull-right" style="padding: 5px;"><@ofbizCurrency amount=orderSubTotal isoCode=currencyUomId/></span>
                   </div>
                 </div>
+                <#list headerAdjustmentsToShow as orderHeaderAdjustment>
                 <div class="row" style="border-top: 1px solid grey;">
                   <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
-                    <span class="pull-right" style="padding: 5px;">Promotion</span>
+                    <span class="pull-right" style="padding: 5px;">${localOrderReadHelper.getAdjustmentType(orderHeaderAdjustment)}</span>
                   </div>
                   <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
+                    <span class="pull-right" style="padding: 5px;"><@ofbizCurrency amount=localOrderReadHelper.getOrderAdjustmentTotal(orderHeaderAdjustment) isoCode=currencyUomId/></span>
                   </div>
                 </div>
+                </#list>
                 <div class="row" style="border-top: 1px solid grey;">
                   <div class="col-lg-10 col-md-10 col-md-7 col-md-7">
                     <span class="pull-right" style="padding: 5px;">Shipping and Handling</span>
                   </div>
                   <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
+                    <span class="pull-right" style="padding: 5px;"><@ofbizCurrency amount=orderShippingTotal isoCode=currencyUomId/></span>
                   </div>
                 </div>
                 <div class="row" style="border-top: 1px solid grey;">
@@ -283,7 +263,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="pull-right" style="padding: 5px;">Sales Tax</span>
                   </div>
                   <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
+                    <span class="pull-right" style="padding: 5px;"><@ofbizCurrency amount=orderTaxTotal isoCode=currencyUomId/></span>
                   </div>
                 </div>
                 <div class="row" style="border-top: 2px solid grey;">
@@ -291,7 +271,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="pull-right" style="padding: 5px;">Grand Total</span>
                   </div>
                   <div class="col-lg-2 col-md-2 col-md-5 col-md-5">
-                    <span class="pull-right" style="padding: 5px;">$50.00</span>
+                    <span class="pull-right" style="padding: 5px;"><@ofbizCurrency amount=orderGrandTotal isoCode=currencyUomId/></span>
                   </div>
                 </div>
               </div>

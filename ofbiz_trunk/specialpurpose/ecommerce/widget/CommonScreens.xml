@@ -69,7 +69,7 @@ under the License.
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/jquery.flexslider.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/images/miscAjaxFunctions.js" global="true" />
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/images/jquery.min.js" global="true"/>
-                <set field="layoutSettings.javaScripts[]" value="/ecommerce/images/bootstrap.min.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/bootstrap.min.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/jstarbox.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/jquery.magnific-popup.js" global="true"/>
                 <set field="layoutSettings.javaScripts[]" value="/ecommerce/js/simpleCart.min.js" global="true"/>

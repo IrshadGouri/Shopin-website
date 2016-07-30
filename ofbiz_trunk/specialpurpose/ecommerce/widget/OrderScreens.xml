@@ -42,20 +42,24 @@ under the License.
         </section>
     </screen>
 
-    <screen name="orderheader">
+    <!-- screen name="orderheader">
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://ecommerce/template/order/OrderHeader.ftl"/></html></platform-specific>
             </widgets>
         </section>
-    </screen>
-    <!--  >screen name="orderheader">
+    </screen -->
+    <screen name="orderheader">
         <section>
+            <actions>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+            </actions>
             <widgets>
                 <platform-specific><html><html-template location="component://ecommerce/template/order/CustomeOrderHeader.ftl"/></html></platform-specific>
             </widgets>
         </section>
-    </screen -->
+    </screen>
 
     <screen name="orderitems">
         <section>
