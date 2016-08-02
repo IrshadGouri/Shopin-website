@@ -523,7 +523,7 @@ under the License.
             </widgets>
         </section>
     </screen>
-    <screen name="viewprofile">
+    <screen name="viewprofile1">
         <section>
             <actions>
                 <set field="titleProperty" value="PageTitleViewProfile"/>
@@ -539,6 +539,28 @@ under the License.
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <platform-specific><html><html-template location="component://ecommerce/template/customer/ViewProfile.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="viewprofile">
+        <section>
+            <actions>
+                <set field="titleProperty" value="PageTitleViewProfile"/>
+
+                <set field="partyId" from-field="userLogin.partyId"/>
+                <entity-one entity-name="Party" value-field="party"/>
+                <entity-one entity-name="Person" value-field="person"/>
+                <entity-one entity-name="PartyGroup" value-field="partyGroup"/>
+                <script location="component://order/groovyScripts/entry/catalog/Category.groovy"/>
+                <script location="component://ecommerce/groovyScripts/catalog/ProductCategories.groovy"/>
+                <script location="component://ecommerce/groovyScripts/customer/ViewProfile.groovy"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://ecommerce/template/customer/CutomerProfile.ftl"/></html></platform-specific>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

@@ -160,7 +160,7 @@
                             </#if>
                        </#if>	
 				        <div class="col-md-6">
-							<a href="single.html"><img src="${categoryImageUrl}" class="img-responsive" alt="">
+							<a href="single.html"><img src="/ecommerce/img/pi1.jpg" class="img-responsive" alt="">
 							<div class="col-pic">
 								<h5>${productCategory.categoryName!productCategoryId}</h5>
 								<button type="button" class="btn btn-danger">SHOP NOW</button>
