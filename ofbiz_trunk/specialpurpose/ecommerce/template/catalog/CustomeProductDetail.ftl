@@ -319,7 +319,6 @@
     <#assign productAdditionalImage2 = productContentWrapper.get("ADDITIONAL_IMAGE_2", "url")! />
     <#assign productAdditionalImage3 = productContentWrapper.get("ADDITIONAL_IMAGE_3", "url")! />
     <#assign productAdditionalImage4 = productContentWrapper.get("ADDITIONAL_IMAGE_4", "url")! />
-    ============${productAdditionalImage1}=============
                 <#if firstLargeImage?has_content>
                     <#assign productAdditionalImage1 = firstLargeImage />
                 </#if>

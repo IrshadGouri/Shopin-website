@@ -194,12 +194,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <div class="shipping-information">
-            <h2>Personal information <a class="text-danger" title="Add Shipping Address" href="<@ofbizUrl>editperson</@ofbizUrl>"><i class="glyphicon glyphicon-plus cursor-pointer"></i></a></h2>
+            <h2>Personal information</h2>
               <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <#if person??>
                     <ul class="iconlist pull-right">
-                      <li><a title="Edit Shipping Address" class="text-danger"><i class="glyphicon glyphicon-pencil cursor-pointer"></i></a></li>
+                      <li><a title="Edit Shipping Address" class="text-danger" href="<@ofbizUrl>editperson</@ofbizUrl>"><i class="glyphicon glyphicon-pencil cursor-pointer"></i></a></li>
                       <li>
                         <a style="margin-left: 5px;" title="Delete Shipping Address" class="text-danger" data-toggle="modal" data-target="#deleteShippingInfoModal"><i class="glyphicon glyphicon-trash cursor-pointer"></i></a>
                       </li>
@@ -235,10 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <#assign eftAccount = paymentMethodValueMap.eftAccount! />
                     <#if paymentMethod.paymentMethodTypeId! == "CREDIT_CARD">
                     <ul class="iconlist pull-right">
-                      <li><a title="Edit Billing Information" href="<@ofbizUrl>editcontactmech?contactMechId=${contactMech.contactMechId}</@ofbizUrl>"><i class="text-danger cursor-pointer glyphicon glyphicon-pencil"></i></a></li>
-                      <li>
-                        <button type="submit" form="delete-billing-addr-10082" class="js-confirm-me btn-link " data-confirm-message="Are you sure you want to delete billing information?" title="Delete Billing Information"><i class="text-danger cursor-pointer glyphicon glyphicon-trash"></i></button>
-                      </li>
+                      <li><a title="Edit Billing Information" href="<@ofbizUrl>editcreditcard?paymentMethodId=${paymentMethod.paymentMethodId0}</@ofbizUrl>"><i class="text-danger cursor-pointer glyphicon glyphicon-pencil"></i></a></li>
                     </ul>
                     <ul class="list-unstyled ">
                       <li><#if creditCard.companyNameOnCard?has_content>${creditCard.companyNameOnCard}&nbsp;</#if></li>
