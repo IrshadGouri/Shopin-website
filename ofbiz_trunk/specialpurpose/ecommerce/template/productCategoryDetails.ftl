@@ -19,7 +19,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <style>
 @media screen and (min-width: 990px) {
   .product-category-image{
-        width: 100%;
+    width: 100%;
+    height: 250px;
   }
 }
 .mid-pop {
